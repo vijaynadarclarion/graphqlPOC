@@ -1,0 +1,52 @@
+{
+  "Authorization": [
+    {
+      "Name": "accidentparty.policies",
+      "Value": true
+    },
+    {
+      "Name": "accidentparty.casepartyid",
+      "Value": true
+    },
+    {
+      "Name": "accidentparty.caseinfoid",
+      "Value": true
+    },
+    {
+      "Name": "accidentparty.partyno",
+      "Value": true
+    },
+    {
+      "Name": "accidentparty.drivername",
+      "Value": true
+    },
+    {
+      "Name": "accidentparty.driverid",
+      "Value": true
+    },
+    {
+      "Name": "accidentsinput.casenumbers",
+      "Value": true
+    },
+    {
+      "Name": "accidentsinput.accidentlocation",
+      "Value": true
+    },
+    {
+      "Name": "accidentsinput.accidentdate",
+      "Value": true
+    },
+    {
+      "Name": "accidentsinput.reportedby",
+      "Value": true
+    },
+    {
+      "Name": "quoteresponse.requestid",
+      "Value": true
+    },
+    {
+      "Name": "quoteresponse.data",
+      "Value": true
+    }
+  ]
+}
