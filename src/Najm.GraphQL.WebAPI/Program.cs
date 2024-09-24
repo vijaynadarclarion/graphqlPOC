@@ -104,7 +104,7 @@ builder.Services.AddGraphQLServer()
 var app = builder.Build();
 
 // Enable HTTPS redirection in production
-app.UseHttpsRedirection(); // Ensure this is enabled if you want to enforce HTTPS
+//app.UseHttpsRedirection(); // Ensure this is enabled if you want to enforce HTTPS
 
 // Enable authentication and authorization
 app.UseAuthentication(); // Middleware to handle authentication
