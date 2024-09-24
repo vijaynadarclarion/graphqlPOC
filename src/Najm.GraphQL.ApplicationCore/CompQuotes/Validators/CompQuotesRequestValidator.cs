@@ -2,7 +2,6 @@
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
-using FluentValidation;
 using Microsoft.AspNetCore.Http;
 
 using Newtonsoft.Json;

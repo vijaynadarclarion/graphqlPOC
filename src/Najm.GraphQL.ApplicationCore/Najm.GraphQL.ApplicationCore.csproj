@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -34,8 +34,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Adf.Core" Version="6.0.9" />
-    <PackageReference Include="Adf.EntityFrameworkCore" Version="6.0.10" />
     
     <PackageReference Include="HotChocolate" Version="13.9.0" />
     <PackageReference Include="HotChocolate.Data.EntityFramework" Version="13.9.0" />
@@ -48,6 +46,10 @@
     <Folder Include="Accidents\Subscriptions\" />
     <Folder Include="Accidents\Validators\" />
     <Folder Include="Resources\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Adf.Core\Adf.Core.csproj" />
   </ItemGroup>
 
 </Project>

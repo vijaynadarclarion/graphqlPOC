@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <UserSecretsId>04036727-ca39-45ce-930f-933a00ce24c9</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>..\..</DockerfileContext>
@@ -25,26 +25,26 @@
 
   <ItemGroup>
  
-    <PackageReference Include="AspNetCore.HealthChecks.System" Version="8.0.0" />
+    <PackageReference Include="AspNetCore.HealthChecks.System" Version="6.0.0" />
  
-    <PackageReference Include="AspNetCore.HealthChecks.Uris" Version="8.0.0" />
+    <PackageReference Include="AspNetCore.HealthChecks.Uris" Version="6.0.0" />
  
     <PackageReference Include="HotChocolate.AspNetCore.Subscriptions" Version="10.5.5" />
  
     <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.1.2" />
  
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.1" />
  
     <PackageReference Include="Microsoft.Extensions.Caching.SqlServer" Version="8.0.0" />
  
-    <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0" />
  
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.6" />
-    <PackageReference Include="AspNetCore.HealthChecks.SqlServer" Version="8.0.0" />
+    <PackageReference Include="AspNetCore.HealthChecks.SqlServer" Version="6.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.HealthChecks" Version="2.2.0" />
-    <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="8.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="8.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="8.0.0" />
+    <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.0" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.0" />
     <PackageReference Include="HotChocolate.AspNetCore" Version="13.9.0" />
     <PackageReference Include="HotChocolate.AspNetCore.Authorization" Version="13.9.0" />
@@ -59,11 +59,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Najm.GraphQL.Infrastructure\Najm.GraphQL.Infrastructure.csproj" />
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\Najm.GraphQL.ApplicationCore\Najm.GraphQL.ApplicationCore.csproj" />
   </ItemGroup>
 
 </Project>

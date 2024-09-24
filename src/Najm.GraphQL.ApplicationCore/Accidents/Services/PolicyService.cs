@@ -4,14 +4,12 @@ using System.Dynamic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Ardalis.GuardClauses;
 using HotChocolate;
 using Microsoft.EntityFrameworkCore;
 using Najm.GraphQL.ApplicationCore._Interfaces;
 using Najm.GraphQL.ApplicationCore.Accidents.Specifications;
 using Najm.GraphQL.ApplicationCore.Entity;
 using Najm.GraphQL.ApplicationCore.Interfaces;
-using Polly;
 
 namespace Najm.GraphQL.ApplicationCore.Accidents.Services;
 

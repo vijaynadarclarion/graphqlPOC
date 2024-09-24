@@ -38,12 +38,7 @@ builder.Logging.ClearProviders();
 builder.Logging.AddSerilog(logger);
 
 
-List<Assembly> _listOfAssemblies;
 
-_listOfAssemblies = new List<Assembly> {
-                // Application Assemblies
-                typeof(Najm.GraphQL.Infrastructure.ServiceCollectionExtensions).Assembly,
-            };
 
 //Application code
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
@@ -91,7 +86,7 @@ builder.Services.AddCors(options =>
 });
 
 // Automapper
-builder.Services.RegisterMapperProfiles(_listOfAssemblies);
+
 builder.Services.AddTransient<IAccidentService, AccidentService>();
 builder.Services.AddHttpClient();
 

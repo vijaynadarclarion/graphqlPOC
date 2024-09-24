@@ -2,8 +2,5 @@
 
 namespace Najm.GraphQL.ApplicationCore.Interfaces
 {
-    public interface IUnitOfWork : IUnitOfWorkBase<IAppDbContext>
-    {
-
-    }
+  
 }
