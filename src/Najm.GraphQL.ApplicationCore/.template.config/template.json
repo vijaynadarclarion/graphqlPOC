@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "NajmArchitectUnit",
+  "classifications": [ "console", "Common", "Library"],
+  "identity": "NajmTemplate.ApplicationCore",
+  "name": "NajmTemplate.ApplicationCore",
+  "shortName": "NajmTemplateApplicationCore",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "SourceName":"NajmTemplate"
+}

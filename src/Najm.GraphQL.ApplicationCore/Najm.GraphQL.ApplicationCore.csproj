@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Accidents\Types\**" />
+    <Compile Remove="Audit\**" />
+    <Compile Remove="Hospitals\**" />
+    <Compile Remove="LiabilitySettlement\**" />
+    <Compile Remove="Users\**" />
+    <EmbeddedResource Remove="Accidents\Types\**" />
+    <EmbeddedResource Remove="Audit\**" />
+    <EmbeddedResource Remove="Hospitals\**" />
+    <EmbeddedResource Remove="LiabilitySettlement\**" />
+    <EmbeddedResource Remove="Users\**" />
+    <None Remove="Accidents\Types\**" />
+    <None Remove="Audit\**" />
+    <None Remove="Hospitals\**" />
+    <None Remove="LiabilitySettlement\**" />
+    <None Remove="Users\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Types\Subscription.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Adf.Core" Version="6.0.9" />
+    <PackageReference Include="Adf.EntityFrameworkCore" Version="6.0.10" />
+    
+    <PackageReference Include="HotChocolate" Version="13.9.0" />
+    <PackageReference Include="HotChocolate.Data.EntityFramework" Version="13.9.0" />
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Accidents\BackgroundJobs\" />
+    <Folder Include="Accidents\Interfaces\" />
+    <Folder Include="Accidents\Subscriptions\" />
+    <Folder Include="Accidents\Validators\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+
+</Project>

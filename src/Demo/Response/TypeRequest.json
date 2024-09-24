@@ -1,0 +1,3 @@
+{"operationName":"IntrospectionQuery","query":"query IntrospectionQuery {\n  __type(name: \"__Type\") {\n    name\n    fields {\n      name\n    }\n  }\n}"}
+------Response--------
+{"data":{"__type":{"name":"__Type","fields":[{"name":"kind"},{"name":"name"},{"name":"description"},{"name":"fields"},{"name":"interfaces"},{"name":"possibleTypes"},{"name":"enumValues"},{"name":"inputFields"},{"name":"ofType"},{"name":"specifiedByURL"}]}}}

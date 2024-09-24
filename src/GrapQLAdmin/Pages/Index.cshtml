@@ -1,0 +1,112 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-left">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <form method="post" asp-page-handler="LoadSchema" style="display: flex; justify-content: space-between; align-items: center;">
+        <h2>GraphQL Schema Introspection</h2>
+        <button type="submit">Load Schema</button>
+        <button type="submit" asp-page-handler="ClearSetting">Clear Setting</button>
+    </form>
+    @if (Model.Schema != null)
+    {
+        <form method="post" asp-page-handler="SaveSchema" style="display: flex; flex-direction: column;">
+            @foreach (var type in Model.Schema.Types)
+            {
+                if ((type.Kind == "OBJECT") && (type.Name == "Query" || type.Name == "AccidentInfo" || type.Name == "AccidentParty" || type.Name == "QuoteResponse"))
+                {
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px;">
+                        <div>
+                            <h3>@type.Name</h3>
+                           
+                            @foreach (var field in type.Fields)
+                            {
+                                if (Model.ConfigFileSet == false)
+                                {
+                                    <input type="checkbox" id="@field.Name" name="selectedFields" value="@type.Name.@field.Name">
+                                    <label for="@field.Name">@field.Name</label>
+                                }
+                                else if(Model.ConfigFileSet == true && !field.IsSelected)
+                                {
+                                    <input type="checkbox" id="@field.Name" name="selectedFields" disabled value="@type.Name.@field.Name" >
+                                    <label for="@field.Name">@field.Name</label>
+
+                                }
+                                else
+                                {
+                                    <input type="checkbox" id="@field.Name" name="selectedFields" value="@type.Name.@field.Name">
+                                    
+                                    <label for="@field.Name" style="color:green">@field.Name</label>
+                                }
+                              
+                            <br />
+                            }
+                        </div>
+                        <div style="padding-left: 20px;">
+                            <select id="selecteduser">
+                                <option value="1">Admin</option>
+                                <option value="3">IC 1</option>
+                                <option value="4">IC 2</option>
+                            </select>
+                            <input type="checkbox" id="role" name="role" value="admin">  <label for="role">Admin</label>
+                            <button type="submit" asp-page-handler="SaveAuthorizationSettings">Save Authorization setting</button>
+                            <button type="submit" asp-page-handler="GenerateToken">Generate Token</button>
+                        </div>
+                    </div>
+                }
+                else if ((type.Kind == "INPUT_OBJECT") && (type.Name == "AccidentsInput"))
+                {
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px;">
+                        <div>
+                            <h3>@type.Name</h3>
+
+                            @foreach (var field in type.InputFields)
+                            {
+                                if (Model.ConfigFileSet == false)
+                                {
+                                    <input type="checkbox" id="@field.Name" name="selectedFields" value="@type.Name.@field.Name">
+                                    <label for="@field.Name">@field.Name</label>
+                                }
+                                else if (Model.ConfigFileSet == true && !field.IsSelected)
+                                {
+                                    <input type="checkbox" id="@field.Name" name="selectedFields" disabled value="@type.Name.@field.Name">
+                                    <label for="@field.Name">@field.Name</label>
+
+                                }
+                                else
+                                {
+                                    <input type="checkbox" id="@field.Name" name="selectedFields" value="@type.Name.@field.Name">
+
+                                    <label for="@field.Name" style="color:green">@field.Name</label>
+                                }
+
+                                <br />
+                            }
+                        </div>
+                        <div style="padding-left: 20px;">
+                            <select id="selecteduser">
+                                <option value="1">Admin</option>
+                                <option value="3">IC 1</option>
+                                <option value="4">IC 2</option>
+                            </select>
+                            <input type="checkbox" id="role" name="role" value="admin">  <label for="role">Admin</label>
+                            <button type="submit" asp-page-handler="SaveAuthorizationSettings">Save Authorization setting</button>
+                            <button type="submit" asp-page-handler="GenerateToken">Generate Token</button>
+                        </div>
+                    </div>
+                }
+            }
+        </form>
+    }
+
+    @if (!string.IsNullOrEmpty(Model.Message))
+    {
+        <p>@Model.Message</p>
+    }
+</div>
+

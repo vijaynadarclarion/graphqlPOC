@@ -1,0 +1,14 @@
+subscription GetCompQuoteRequest($input: CompQuoteInput!) {
+    compQuoteRequest(input: $input) {
+        requestReferenceNo
+        insuranceCompanyCode
+        errors {
+            message
+            code
+        }
+        entity {
+            maxLiability
+            policyTitleID
+        }
+    }
+}

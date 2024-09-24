@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GraphQL Subscription Client</title>
+</head>
+<body>
+    <h1>GraphQL Subscription Example</h1>
+
+    <!-- Textarea for subscription query -->
+    <textarea id="subscriptionQuery" rows="10" cols="80">
+        subscription {
+            onQuoteRequested(input: {
+                requestReferenceNo: "REQ112233789",
+                quoteRequestSourceID: 302
+            }) {
+                requestReferenceNo,
+                errors
+            }
+        }
+    </textarea>
+    <br>
+    <button onclick="connectAndSubscribe()">Connect & Subscribe</button>
+
+    <!-- Div to show the response -->
+    <div id="response"></div>
+
+    <script>
+        let ws;
+
+        function connectAndSubscribe() {
+            const wsUrl = 'wss://localhost:7171/graphql/';
+            ws = new WebSocket(wsUrl, 'graphql-transport-ws'); // Use the correct protocol
+
+            ws.onopen = function () {
+                console.log('WebSocket connection opened.');
+
+                // Send connection initialization message
+                const initMessage = {
+                    type: 'connection_init',
+                    payload: {} // Optional: Send authentication token if required
+                };
+                ws.send(JSON.stringify(initMessage));
+
+                // Optionally, send pings to keep connection alive
+                const pingInterval = setInterval(() => {
+                    if (ws.readyState === WebSocket.OPEN) {
+                        ws.send(JSON.stringify({ type: 'ping' }));
+                    } else {
+                        clearInterval(pingInterval); // Clear ping interval if WebSocket is closed
+                    }
+                }, 30000); // Ping every 30 seconds
+            };
+
+            ws.onmessage = function (event) {
+                const response = JSON.parse(event.data);
+
+                // Handle server acknowledgment
+                if (response.type === 'connection_ack') {
+                    console.log('Connection acknowledged by server.');
+                    sendSubscriptionRequest(); // Send the subscription request after acknowledgment
+                }
+
+                // Handle incoming data
+                if (response.type === 'data') {
+                    const result = response.payload.data.onQuoteRequested;
+                    if (result.errors && result.errors.length > 0) {
+                        // Show the errors
+                        document.getElementById('response').innerHTML = `
+                                <p style="color: red;">Errors: ${result.errors.join(', ')}</p>
+                            `;
+                    } else {
+                        // Show the result (Request Reference No)
+                        document.getElementById('response').innerHTML = `
+                                <p>Request Reference No: ${result.requestReferenceNo}</p>
+                            `;
+                    }
+                }
+
+                // Handle pings from the server
+                if (response.type === 'ping') {
+                    ws.send(JSON.stringify({ type: 'pong' }));
+                }
+            };
+
+            ws.onerror = function (error) {
+                console.error('WebSocket error:', error);
+            };
+
+            ws.onclose = function () {
+                console.log('WebSocket connection closed.');
+                // Optionally implement reconnection logic
+            };
+        }
+
+        function sendSubscriptionRequest() {
+            try {
+
+                const message2 = {
+                    id: '1', // Unique ID for the subscription
+                    type: 'start', // Start the subscription
+                    payload: {
+                        query: `
+                                subscription {
+                                    onQuoteRequested(input: {
+                                        requestReferenceNo: "REQ112233789",
+                                        quoteRequestSourceID: 302
+                                    }) {
+                                        requestReferenceNo,
+                                        errors
+                                    }
+                                }
+                            `
+                    }
+                };
+
+               // const query = JSON.parse(document.getElementById('subscriptionQuery').value);
+                const query = document.getElementById('subscriptionQuery').value;
+                const message = {
+                    id: '1', // Unique ID for the subscription
+                    type: 'start', // Start the subscription
+                    payload: {
+                        query: query
+                    }
+                };
+                ws.send(JSON.stringify(message2));
+            }
+            catch (e) { 
+                alert(e);
+            }
+        }
+    </script>
+</body>
+</html>

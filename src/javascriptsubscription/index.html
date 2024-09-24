@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GraphQL Subscription with jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>GraphQL Subscription with jQuery</h1>
+    <div id="quotes"></div>
+    <script>
+        $(document).ready(function() {
+            const url = 'ws://localhost:5107/graphql'; // WebSocket endpoint
+            const socket = new WebSocket(url, 'graphql-transport-ws'); // Ensure protocol is set
+
+            // GraphQL Subscription query and variables
+            const query = `
+                subscription OnQuoteRequested($requestId: String!) {
+                    onQuoteRequested(requestId: $requestId) {
+                        requestId
+                        data
+                    }
+                }
+            `;
+
+            const variables = {
+                requestId: "unique-request-id"
+            };
+
+            const authToken = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImRlbW8iLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE3MTc0OTUwMjksImV4cCI6MTcxNzQ5ODYyOSwiaWF0IjoxNzE3NDk1MDI5LCJpc3MiOiJkZW1vIiwiYXVkIjoiZGVtb2FwaSJ9.s98-uI-hjFLRKBzwS0rSjIMrrbLtW4hba-bh0YKeZJQ'; // Replace with your actual token
+
+            // GraphQL-WS Protocol Messages
+            const connectionInitMessage = {
+                type: 'connection_init',
+                payload: {
+                    
+                        Authorization: authToken
+                    
+                }
+            };
+
+            const subscribeMessage = {
+                id: '1',
+                type: 'subscribe',
+                payload: {
+                    query: query,
+                    variables: variables
+                }
+            };
+
+            socket.onopen = function(event) {
+                // Send connection_init message
+                socket.send(JSON.stringify(connectionInitMessage));
+            };
+
+            socket.onmessage = function(event) {
+                const message = JSON.parse(event.data);
+
+                if (message.type === 'connection_ack') {
+                    // Connection acknowledged, send subscribe message
+                    socket.send(JSON.stringify(subscribeMessage));
+                } else if (message.type === 'next' && message.id === '1') {
+                    const quoteResponse = message.payload.data.onQuoteRequested;
+                    $('#quotes').append(`<p>New quote received: ${quoteResponse.data} with Request ID: ${quoteResponse.requestId}</p>`);
+                } else if (message.type === 'error') {
+                    console.error('Subscription error:', message.payload.errors);
+                } else if (message.type === 'complete' && message.id === '1') {
+                    console.log('Subscription complete');
+                }
+            };
+
+            socket.onerror = function(error) {
+                console.error('WebSocket error:', error);
+            };
+
+            socket.onclose = function(event) {
+                console.log('WebSocket connection closed:', event);
+            };
+        });
+    </script>
+</body>
+</html>

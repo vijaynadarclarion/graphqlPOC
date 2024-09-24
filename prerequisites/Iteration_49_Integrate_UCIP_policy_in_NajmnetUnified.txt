@@ -1,0 +1,15 @@
+New Domain User: No
+DB Permissions: NajmNetReplica,NajmLogManagement, and NajmLogTrace
+Shared Folder Access or S3 Object storage: No
+URL Access (Internal application or Third Party Url): No
+Internet Access: No
+Connecting String (Primary or Secondary): Primary for NajmLogManagement, and NajmLogTrace
+                                          Secondary for NajmNetReplica 
+Log folder Access: No
+Identity Server Details: https://is4.najm.sa
+Any Framework installation: .NET 6 Runtime
+Any software depenencies: No
+Application would be (public or internal) accessible: internal
+Specific IIS settings: No
+HA or Sticky session: HA
+Any Others: No

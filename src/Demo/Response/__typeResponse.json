@@ -1,0 +1,19 @@
+{
+  "data": {
+    "__type": {
+      "name": "__Type",
+      "fields": [
+        { "name": "kind" },
+        { "name": "name" },
+        { "name": "description" },
+        { "name": "fields" },
+        { "name": "interfaces" },
+        { "name": "possibleTypes" },
+        { "name": "enumValues" },
+        { "name": "inputFields" },
+        { "name": "ofType" },
+        { "name": "specifiedByURL" }
+      ]
+    }
+  }
+}

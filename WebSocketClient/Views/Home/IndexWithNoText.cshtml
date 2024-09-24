@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GraphQL Subscription Client</title>
+</head>
+<body>
+    <h1>GraphQL Subscription Example</h1>
+    <div id="response"></div>
+
+    <script>
+        const wsUrl = 'wss://localhost:7171/graphql/';
+        let ws = new WebSocket(wsUrl, 'graphql-ws'); // Use the correct protocol
+
+        function sendSubscriptionRequest() {
+            const message = {
+                id: '1',
+                type: 'start',
+                payload: {
+                    query: `
+                                subscription {
+                                    onQuoteRequested(input: {
+                                        requestReferenceNo: "REQ112233789",
+                                        quoteRequestSourceID: 302
+                                    }) {
+                                        requestReferenceNo,
+                                        errors
+                                    }
+                                }
+                            `
+                }
+            };
+            ws.send(JSON.stringify(message));
+        }
+
+        ws.onopen = function () {
+            console.log('WebSocket connection opened.');
+
+            // Send connection initialization message
+            const initMessage = {
+                type: 'connection_init',
+                payload: {} // Optional: send authentication token if required
+            };
+            ws.send(JSON.stringify(initMessage));
+
+            // Optionally, send pings to keep connection alive
+            const pingInterval = setInterval(() => {
+                if (ws.readyState === WebSocket.OPEN) {
+                    ws.send(JSON.stringify({ type: 'ping' }));
+                }
+            }, 30000); // Ping every 30 seconds
+        };
+
+        ws.onmessage = function (event) {
+            const response = JSON.parse(event.data);
+
+            // Handle server acknowledgment
+            if (response.type === 'connection_ack') {
+                console.log('Connection acknowledged by server.');
+                sendSubscriptionRequest(); // Send the subscription request after acknowledgment
+            }
+
+            if (response.type === 'data') {
+                const result = response.payload.data.onQuoteRequested;
+                if (result.errors && result.errors.length > 0) {
+                    // Show the errors
+                    document.getElementById('response').innerHTML = `
+                        <p style="color: red;">Errors: ${result.errors.join(', ')}</p>
+                    `;
+                } else {
+                    // Show the result (Request Reference No)
+                    document.getElementById('response').innerHTML = `
+                        <p>Request Reference No: ${result.requestReferenceNo}</p>
+                    `;
+                }
+            }
+        };
+
+        ws.onerror = function (error) {
+            console.error('WebSocket error:', error);
+        };
+
+        ws.onclose = function () {
+            console.log('WebSocket connection closed.');
+            // Optionally implement reconnection logic
+        };
+    </script>
+</body>
+</html>

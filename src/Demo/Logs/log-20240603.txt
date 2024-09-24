@@ -1,0 +1,104 @@
+2024-06-03 11:57:55.657 +05:30 [DBG] Hosting starting
+2024-06-03 11:57:55.744 +05:30 [INF] User profile is available. Using 'C:\Users\Vijay Nadar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-03 11:57:55.756 +05:30 [DBG] Reading data from file 'C:\Users\Vijay Nadar\AppData\Local\ASP.NET\DataProtection-Keys\key-489c9d49-b6c0-4fe6-81e1-bfb33381f14e.xml'.
+2024-06-03 11:57:55.766 +05:30 [DBG] Reading data from file 'C:\Users\Vijay Nadar\AppData\Local\ASP.NET\DataProtection-Keys\key-50a0cdda-24d1-4ec7-b0f9-015a69c57e93.xml'.
+2024-06-03 11:57:55.772 +05:30 [DBG] Reading data from file 'C:\Users\Vijay Nadar\AppData\Local\ASP.NET\DataProtection-Keys\key-65adbe12-a22e-4c59-8d8d-aeae8087e3f3.xml'.
+2024-06-03 11:57:55.778 +05:30 [DBG] Reading data from file 'C:\Users\Vijay Nadar\AppData\Local\ASP.NET\DataProtection-Keys\key-9443aed4-d4f3-48ad-bdf2-c2541a1968f5.xml'.
+2024-06-03 11:57:55.788 +05:30 [DBG] Found key {489c9d49-b6c0-4fe6-81e1-bfb33381f14e}.
+2024-06-03 11:57:55.799 +05:30 [DBG] Found key {50a0cdda-24d1-4ec7-b0f9-015a69c57e93}.
+2024-06-03 11:57:55.800 +05:30 [DBG] Found key {65adbe12-a22e-4c59-8d8d-aeae8087e3f3}.
+2024-06-03 11:57:55.802 +05:30 [DBG] Found key {9443aed4-d4f3-48ad-bdf2-c2541a1968f5}.
+2024-06-03 11:57:55.810 +05:30 [DBG] Considering key {65adbe12-a22e-4c59-8d8d-aeae8087e3f3} with expiration date 2024-07-01 11:44:20Z as default key.
+2024-06-03 11:57:55.816 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-06-03 11:57:55.820 +05:30 [DBG] Decrypting secret element using Windows DPAPI.
+2024-06-03 11:57:55.822 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-06-03 11:57:55.825 +05:30 [DBG] Using key {65adbe12-a22e-4c59-8d8d-aeae8087e3f3} as the default key.
+2024-06-03 11:57:55.828 +05:30 [DBG] Key ring with default key {65adbe12-a22e-4c59-8d8d-aeae8087e3f3} was loaded during application startup.
+2024-06-03 11:57:56.378 +05:30 [INF] Now listening on: https://localhost:7171
+2024-06-03 11:57:56.379 +05:30 [INF] Now listening on: http://localhost:5107
+2024-06-03 11:57:56.381 +05:30 [DBG] Loaded hosting startup assembly Demo
+2024-06-03 11:57:56.382 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-06-03 11:57:56.383 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-06-03 11:57:56.385 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-03 11:57:56.386 +05:30 [INF] Hosting environment: Development
+2024-06-03 11:57:56.387 +05:30 [INF] Content root path: D:\VijayN\Najm\Najm-NajmNet-API-GrapQL-POC\src\Demo
+2024-06-03 11:57:56.388 +05:30 [DBG] Hosting started
+2024-06-03 11:57:56.582 +05:30 [DBG] Connection id "0HN43IP78LHAN" accepted.
+2024-06-03 11:57:56.584 +05:30 [DBG] Connection id "0HN43IP78LHAN" started.
+2024-06-03 11:57:56.593 +05:30 [DBG] Connection id "0HN43IP78LHAO" accepted.
+2024-06-03 11:57:56.595 +05:30 [DBG] Connection id "0HN43IP78LHAO" started.
+2024-06-03 11:57:58.178 +05:30 [DBG] Connection id "0HN43IP78LHAP" accepted.
+2024-06-03 11:57:58.183 +05:30 [DBG] Connection id "0HN43IP78LHAP" started.
+2024-06-03 11:57:58.211 +05:30 [DBG] Connection id "0HN43IP78LHAQ" accepted.
+2024-06-03 11:57:58.212 +05:30 [DBG] Connection id "0HN43IP78LHAQ" started.
+2024-06-03 11:57:58.263 +05:30 [DBG] Connection 0HN43IP78LHAP established using the following protocol: "Tls12"
+2024-06-03 11:57:58.263 +05:30 [DBG] Connection 0HN43IP78LHAQ established using the following protocol: "Tls12"
+2024-06-03 11:57:58.306 +05:30 [DBG] Connection id "0HN43IP78LHAP" received FIN.
+2024-06-03 11:57:58.317 +05:30 [DBG] Connection id "0HN43IP78LHAP" is closing.
+2024-06-03 11:57:58.321 +05:30 [DBG] Connection id "0HN43IP78LHAP" is closed. The last processed stream ID was 0.
+2024-06-03 11:57:58.323 +05:30 [DBG] The connection queue processing loop for 0HN43IP78LHAP completed.
+2024-06-03 11:57:58.325 +05:30 [DBG] Connection id "0HN43IP78LHAP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-03 11:57:58.336 +05:30 [DBG] Connection id "0HN43IP78LHAP" stopped.
+2024-06-03 11:57:58.363 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/ - null null
+2024-06-03 11:57:58.511 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-06-03 11:57:58.513 +05:30 [DBG] The request path / does not match a supported file type
+2024-06-03 11:57:58.527 +05:30 [DBG] No candidates found for the request path '/'
+2024-06-03 11:57:58.528 +05:30 [DBG] Request did not match any endpoints
+2024-06-03 11:57:58.985 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-03 11:57:59.001 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/ - 404 0 null 643.9453ms
+2024-06-03 11:57:59.008 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7171/, Response status code: 404
+2024-06-03 11:57:59.037 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/favicon.ico - null null
+2024-06-03 11:57:59.062 +05:30 [DBG] The request path /favicon.ico does not match an existing file
+2024-06-03 11:57:59.067 +05:30 [DBG] No candidates found for the request path '/favicon.ico'
+2024-06-03 11:57:59.070 +05:30 [DBG] Request did not match any endpoints
+2024-06-03 11:57:59.073 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-03 11:57:59.078 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/favicon.ico - 499 null null 40.6043ms
+2024-06-03 11:57:59.084 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7171/favicon.ico, Response status code: 499
+2024-06-03 11:58:02.119 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/playground/ - null null
+2024-06-03 11:58:02.130 +05:30 [DBG] The request path /playground/ does not match a supported file type
+2024-06-03 11:58:02.138 +05:30 [DBG] 1 candidate(s) found for the request path '/playground/'
+2024-06-03 11:58:02.141 +05:30 [DBG] Request matched endpoint 'GraphQL Playground'
+2024-06-03 11:58:02.149 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-03 11:58:02.153 +05:30 [INF] Executing endpoint 'GraphQL Playground'
+2024-06-03 11:58:02.173 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-06-03 11:58:02.179 +05:30 [INF] Executed endpoint 'GraphQL Playground'
+2024-06-03 11:58:02.182 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-06-03 11:58:02.184 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/playground/ - 200 null text/html 65.9889ms
+2024-06-03 11:58:02.239 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-03 11:58:02.240 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2024-06-03 11:58:02.269 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 30.3267ms
+2024-06-03 11:58:02.374 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 134.3125ms
+2024-06-03 11:58:03.162 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 1468
+2024-06-03 11:58:03.167 +05:30 [DBG] POST requests are not supported
+2024-06-03 11:58:03.170 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-06-03 11:58:03.175 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-06-03 11:58:03.178 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-06-03 11:58:03.182 +05:30 [DBG] The request has an origin header: 'https://localhost:7171'.
+2024-06-03 11:58:03.185 +05:30 [INF] CORS policy execution successful.
+2024-06-03 11:58:03.188 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-03 11:58:03.189 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-06-03 11:58:03.864 +05:30 [DBG] Connection id "0HN43IP78LHAQ", Request id "0HN43IP78LHAQ:00000019": started reading request body.
+2024-06-03 11:58:03.866 +05:30 [DBG] Connection id "0HN43IP78LHAQ", Request id "0HN43IP78LHAQ:00000019": done reading request body.
+2024-06-03 11:58:04.092 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-06-03 11:58:04.095 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 200 null application/graphql-response+json; charset=utf-8 932.6746ms
+2024-06-03 11:58:05.384 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 208
+2024-06-03 11:58:05.388 +05:30 [DBG] POST requests are not supported
+2024-06-03 11:58:05.389 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-06-03 11:58:05.390 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-06-03 11:58:05.392 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-06-03 11:58:05.393 +05:30 [DBG] The request has an origin header: 'https://localhost:7171'.
+2024-06-03 11:58:05.396 +05:30 [INF] CORS policy execution successful.
+2024-06-03 11:58:05.400 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-03 11:58:05.402 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-06-03 11:58:05.403 +05:30 [DBG] Connection id "0HN43IP78LHAQ", Request id "0HN43IP78LHAQ:0000001B": started reading request body.
+2024-06-03 11:58:05.405 +05:30 [DBG] Connection id "0HN43IP78LHAQ", Request id "0HN43IP78LHAQ:0000001B": done reading request body.
+2024-06-03 11:58:05.425 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-06-03 11:58:05.437 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-06-03 11:58:05.439 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 200 null application/graphql-response+json; charset=utf-8 54.9942ms
+2024-06-03 11:58:06.603 +05:30 [DBG] Authentication of the HTTPS connection timed out.
+2024-06-03 11:58:06.603 +05:30 [DBG] Authentication of the HTTPS connection timed out.
+2024-06-03 11:58:06.604 +05:30 [DBG] Connection id "0HN43IP78LHAO" stopped.
+2024-06-03 11:58:06.606 +05:30 [DBG] Connection id "0HN43IP78LHAN" stopped.
+2024-06-03 11:58:06.607 +05:30 [DBG] Connection id "0HN43IP78LHAO" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-03 11:58:06.608 +05:30 [DBG] Connection id "0HN43IP78LHAN" sending FIN because: "The Socket transport's send loop completed gracefully."

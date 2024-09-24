@@ -1,0 +1,59 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://coding.abel.nu/2012/03/ef-migrations-command-reference/
+
+
+
+#add migration
+
+
+
+Update-Database  -Context ApplicationDbContext  -Migration: 20190422175715_AddEntityDelegateTypeQuotesssssd5555  -Verbose
+
+remove-migration  -Context ApplicationDbContext
+
+
+#Rollback database to specific migration
+Update-Database -Migration:"Migration_Class_Name"
+
+#The following example creates a script for the InitialCreate migration, using the migration name.
+
+Script-Migration -To InitialCreate
+
+#The following example creates a script for all migrations after the InitialCreate migration, using the migration ID.
+
+Script-Migration -From 20180904195021_InitialCreate
+
+
+dotnet ef migrations add InitialCreate
+
+
+taskkill /f /pid 14664
+
+Add-Migration -Context AttachmentsDbContext "Initial"   -o ./Data/Migrations   
+
+Update-Database -Context AttachmentsDbContext -Verbose  
+
+
+Add-Migration -Context AppDbContext "Initial"   -o ./Data/Migrations     ,AppDbContext,IdentityDbContext

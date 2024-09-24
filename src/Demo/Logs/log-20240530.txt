@@ -1,0 +1,885 @@
+2024-05-30 18:46:41.758 +05:30 [DBG] Hosting starting
+2024-05-30 18:46:42.033 +05:30 [INF] Now listening on: https://localhost:7171
+2024-05-30 18:46:42.036 +05:30 [INF] Now listening on: http://localhost:5107
+2024-05-30 18:46:42.037 +05:30 [DBG] Loaded hosting startup assembly Demo
+2024-05-30 18:46:42.037 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-05-30 18:46:42.038 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-05-30 18:46:42.039 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-30 18:46:42.041 +05:30 [INF] Hosting environment: Development
+2024-05-30 18:46:42.042 +05:30 [INF] Content root path: D:\VijayN\Najm\Najm-NajmNet-API-GrapQL-POC\src\Demo
+2024-05-30 18:46:42.043 +05:30 [DBG] Hosting started
+2024-05-30 18:46:42.415 +05:30 [DBG] Connection id "0HN40LAVMPPI9" accepted.
+2024-05-30 18:46:42.417 +05:30 [DBG] Connection id "0HN40LAVMPPI9" started.
+2024-05-30 18:46:42.437 +05:30 [DBG] Connection id "0HN40LAVMPPIA" accepted.
+2024-05-30 18:46:42.438 +05:30 [DBG] Connection id "0HN40LAVMPPIA" started.
+2024-05-30 18:46:42.453 +05:30 [DBG] Connection id "0HN40LAVMPPIA" received FIN.
+2024-05-30 18:46:42.453 +05:30 [DBG] Connection id "0HN40LAVMPPI9" received FIN.
+2024-05-30 18:46:42.466 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-30 18:46:42.466 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-30 18:46:42.505 +05:30 [DBG] Connection id "0HN40LAVMPPI9" stopped.
+2024-05-30 18:46:42.505 +05:30 [DBG] Connection id "0HN40LAVMPPIA" stopped.
+2024-05-30 18:46:42.510 +05:30 [DBG] Connection id "0HN40LAVMPPIA" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-30 18:46:42.510 +05:30 [DBG] Connection id "0HN40LAVMPPI9" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-30 18:46:45.155 +05:30 [DBG] Connection id "0HN40LAVMPPIB" accepted.
+2024-05-30 18:46:45.157 +05:30 [DBG] Connection id "0HN40LAVMPPIB" started.
+2024-05-30 18:46:45.167 +05:30 [DBG] Connection id "0HN40LAVMPPIC" accepted.
+2024-05-30 18:46:45.171 +05:30 [DBG] Connection id "0HN40LAVMPPIC" started.
+2024-05-30 18:46:45.206 +05:30 [DBG] Connection 0HN40LAVMPPIB established using the following protocol: "Tls12"
+2024-05-30 18:46:45.206 +05:30 [DBG] Connection 0HN40LAVMPPIC established using the following protocol: "Tls12"
+2024-05-30 18:46:45.248 +05:30 [DBG] Connection id "0HN40LAVMPPIC" received FIN.
+2024-05-30 18:46:45.251 +05:30 [DBG] Connection id "0HN40LAVMPPIC" is closing.
+2024-05-30 18:46:45.253 +05:30 [DBG] Connection id "0HN40LAVMPPIC" is closed. The last processed stream ID was 0.
+2024-05-30 18:46:45.254 +05:30 [DBG] The connection queue processing loop for 0HN40LAVMPPIC completed.
+2024-05-30 18:46:45.255 +05:30 [DBG] Connection id "0HN40LAVMPPIC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-30 18:46:45.259 +05:30 [DBG] Connection id "0HN40LAVMPPIC" stopped.
+2024-05-30 18:46:45.281 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/ - null null
+2024-05-30 18:46:45.366 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-05-30 18:46:45.368 +05:30 [DBG] The request path / does not match a supported file type
+2024-05-30 18:46:45.383 +05:30 [DBG] No candidates found for the request path '/'
+2024-05-30 18:46:45.386 +05:30 [DBG] Request did not match any endpoints
+2024-05-30 18:46:45.390 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/ - 404 0 null 113.0826ms
+2024-05-30 18:46:45.393 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7171/, Response status code: 404
+2024-05-30 18:56:14.032 +05:30 [DBG] Hosting starting
+2024-05-30 18:56:14.745 +05:30 [INF] Now listening on: https://localhost:7171
+2024-05-30 18:56:14.747 +05:30 [INF] Now listening on: http://localhost:5107
+2024-05-30 18:56:14.748 +05:30 [DBG] Loaded hosting startup assembly Demo
+2024-05-30 18:56:14.748 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-05-30 18:56:14.749 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-05-30 18:56:14.750 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-30 18:56:14.750 +05:30 [INF] Hosting environment: Development
+2024-05-30 18:56:14.751 +05:30 [INF] Content root path: D:\VijayN\Najm\Najm-NajmNet-API-GrapQL-POC\src\Demo
+2024-05-30 18:56:14.752 +05:30 [DBG] Hosting started
+2024-05-30 18:56:14.918 +05:30 [DBG] Connection id "0HN40LGAAK2K9" received FIN.
+2024-05-30 18:56:14.924 +05:30 [DBG] Connection id "0HN40LGAAK2K9" accepted.
+2024-05-30 18:56:14.926 +05:30 [DBG] Connection id "0HN40LGAAK2K9" started.
+2024-05-30 18:56:14.939 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-30 18:56:14.965 +05:30 [DBG] Connection id "0HN40LGAAK2K9" stopped.
+2024-05-30 18:56:14.968 +05:30 [DBG] Connection id "0HN40LGAAK2K9" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-30 18:56:19.882 +05:30 [DBG] Connection id "0HN40LGAAK2KA" accepted.
+2024-05-30 18:56:19.885 +05:30 [DBG] Connection id "0HN40LGAAK2KA" started.
+2024-05-30 18:56:19.931 +05:30 [DBG] Connection 0HN40LGAAK2KA established using the following protocol: "Tls12"
+2024-05-30 18:56:20.011 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/ - null null
+2024-05-30 18:56:20.126 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-05-30 18:56:20.128 +05:30 [DBG] The request path / does not match a supported file type
+2024-05-30 18:56:20.150 +05:30 [DBG] No candidates found for the request path '/'
+2024-05-30 18:56:20.152 +05:30 [DBG] Request did not match any endpoints
+2024-05-30 18:56:20.158 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/ - 404 0 null 155.9634ms
+2024-05-30 18:56:20.166 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7171/, Response status code: 404
+2024-05-30 18:56:42.838 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/playground/ - null null
+2024-05-30 18:56:42.848 +05:30 [DBG] The request path /playground/ does not match a supported file type
+2024-05-30 18:56:42.856 +05:30 [DBG] 1 candidate(s) found for the request path '/playground/'
+2024-05-30 18:56:42.858 +05:30 [DBG] Request matched endpoint 'GraphQL Playground'
+2024-05-30 18:56:42.865 +05:30 [INF] Executing endpoint 'GraphQL Playground'
+2024-05-30 18:56:42.874 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-05-30 18:56:42.876 +05:30 [INF] Executed endpoint 'GraphQL Playground'
+2024-05-30 18:56:42.877 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-05-30 18:56:42.878 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/playground/ - 200 null text/html 40.819ms
+2024-05-30 18:56:42.963 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-30 18:56:42.985 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 21.8807ms
+2024-05-30 18:56:42.990 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2024-05-30 18:56:43.058 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 67.7216ms
+2024-05-30 18:56:43.769 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 1468
+2024-05-30 18:56:43.773 +05:30 [DBG] POST requests are not supported
+2024-05-30 18:56:43.774 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-05-30 18:56:43.779 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-05-30 18:56:43.781 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 18:56:43.782 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 18:56:44.151 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 18:56:44.152 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. The object type `Query` has to at least define one field in order to be valid. (HotChocolate.Types.ObjectType<Demo.Query.Query>)
+
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.SchemaBuilder.Create(IDescriptorContext context)
+   at HotChocolate.SchemaBuilder.HotChocolate.ISchemaBuilder.Create(IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(ConfigurationContext context, RequestExecutorSetup setup, RequestExecutorOptions executorOptions, IServiceProvider schemaServices, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(ConfigurationContext context, RequestExecutorSetup setup, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(String schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(String schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass20_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-30 18:56:44.162 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 500 null text/plain; charset=utf-8 393.0596ms
+2024-05-30 18:56:44.165 +05:30 [DBG] Connection id "0HN40LGAAK2KA", Request id "0HN40LGAAK2KA:00000017": started reading request body.
+2024-05-30 18:56:44.166 +05:30 [DBG] Connection id "0HN40LGAAK2KA", Request id "0HN40LGAAK2KA:00000017": done reading request body.
+2024-05-30 18:57:35.871 +05:30 [DBG] Hosting starting
+2024-05-30 18:57:36.503 +05:30 [INF] Now listening on: https://localhost:7171
+2024-05-30 18:57:36.505 +05:30 [INF] Now listening on: http://localhost:5107
+2024-05-30 18:57:36.506 +05:30 [DBG] Loaded hosting startup assembly Demo
+2024-05-30 18:57:36.506 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-05-30 18:57:36.507 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-05-30 18:57:36.508 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-30 18:57:36.508 +05:30 [INF] Hosting environment: Development
+2024-05-30 18:57:36.509 +05:30 [INF] Content root path: D:\VijayN\Najm\Najm-NajmNet-API-GrapQL-POC\src\Demo
+2024-05-30 18:57:36.510 +05:30 [DBG] Hosting started
+2024-05-30 18:57:36.535 +05:30 [DBG] Connection id "0HN40LH2KVES4" accepted.
+2024-05-30 18:57:36.535 +05:30 [DBG] Connection id "0HN40LH2KVES3" accepted.
+2024-05-30 18:57:36.536 +05:30 [DBG] Connection id "0HN40LH2KVES4" started.
+2024-05-30 18:57:36.537 +05:30 [DBG] Connection id "0HN40LH2KVES3" started.
+2024-05-30 18:57:36.548 +05:30 [DBG] Connection id "0HN40LH2KVES3" received FIN.
+2024-05-30 18:57:36.548 +05:30 [DBG] Connection id "0HN40LH2KVES4" received FIN.
+2024-05-30 18:57:36.555 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-30 18:57:36.555 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-30 18:57:36.582 +05:30 [DBG] Connection id "0HN40LH2KVES3" stopped.
+2024-05-30 18:57:36.582 +05:30 [DBG] Connection id "0HN40LH2KVES4" stopped.
+2024-05-30 18:57:36.585 +05:30 [DBG] Connection id "0HN40LH2KVES4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-30 18:57:36.585 +05:30 [DBG] Connection id "0HN40LH2KVES3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-30 18:57:41.978 +05:30 [DBG] Connection id "0HN40LH2KVES5" accepted.
+2024-05-30 18:57:41.985 +05:30 [DBG] Connection id "0HN40LH2KVES5" started.
+2024-05-30 18:57:42.041 +05:30 [DBG] Connection 0HN40LH2KVES5 established using the following protocol: "Tls12"
+2024-05-30 18:57:42.123 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/ - null null
+2024-05-30 18:57:42.259 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-05-30 18:57:42.262 +05:30 [DBG] The request path / does not match a supported file type
+2024-05-30 18:57:42.295 +05:30 [DBG] No candidates found for the request path '/'
+2024-05-30 18:57:42.297 +05:30 [DBG] Request did not match any endpoints
+2024-05-30 18:57:42.304 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/ - 404 0 null 189.8232ms
+2024-05-30 18:57:42.313 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7171/, Response status code: 404
+2024-05-30 18:57:45.417 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/playground/ - null null
+2024-05-30 18:57:45.425 +05:30 [DBG] The request path /playground/ does not match a supported file type
+2024-05-30 18:57:45.433 +05:30 [DBG] 1 candidate(s) found for the request path '/playground/'
+2024-05-30 18:57:45.574 +05:30 [DBG] Request matched endpoint 'GraphQL Playground'
+2024-05-30 18:57:45.583 +05:30 [INF] Executing endpoint 'GraphQL Playground'
+2024-05-30 18:57:45.592 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-05-30 18:57:45.594 +05:30 [INF] Executed endpoint 'GraphQL Playground'
+2024-05-30 18:57:45.596 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-05-30 18:57:45.596 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/playground/ - 200 null text/html 179.9161ms
+2024-05-30 18:57:45.626 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2024-05-30 18:57:45.627 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-30 18:57:45.661 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 33.8584ms
+2024-05-30 18:57:45.683 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 57.2262ms
+2024-05-30 18:57:46.416 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 1468
+2024-05-30 18:57:46.420 +05:30 [DBG] POST requests are not supported
+2024-05-30 18:57:46.423 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-05-30 18:57:46.426 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-05-30 18:57:46.428 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 18:57:46.429 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 18:57:46.875 +05:30 [DBG] Connection id "0HN40LH2KVES5", Request id "0HN40LH2KVES5:00000017": started reading request body.
+2024-05-30 18:57:46.878 +05:30 [DBG] Connection id "0HN40LH2KVES5", Request id "0HN40LH2KVES5:00000017": done reading request body.
+2024-05-30 18:57:47.010 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 18:57:47.013 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 200 null application/graphql-response+json; charset=utf-8 597.28ms
+2024-05-30 18:57:56.704 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 1468
+2024-05-30 18:57:56.707 +05:30 [DBG] POST requests are not supported
+2024-05-30 18:57:56.707 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-05-30 18:57:56.711 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-05-30 18:57:56.713 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 18:57:56.714 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 18:57:56.715 +05:30 [DBG] Connection id "0HN40LH2KVES5", Request id "0HN40LH2KVES5:00000019": started reading request body.
+2024-05-30 18:57:56.717 +05:30 [DBG] Connection id "0HN40LH2KVES5", Request id "0HN40LH2KVES5:00000019": done reading request body.
+2024-05-30 18:57:56.723 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 18:57:56.726 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 200 null application/graphql-response+json; charset=utf-8 22.9441ms
+2024-05-30 18:59:08.038 +05:30 [DBG] Hosting starting
+2024-05-30 18:59:08.557 +05:30 [INF] Now listening on: https://localhost:7171
+2024-05-30 18:59:08.559 +05:30 [INF] Now listening on: http://localhost:5107
+2024-05-30 18:59:08.560 +05:30 [DBG] Loaded hosting startup assembly Demo
+2024-05-30 18:59:08.561 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-05-30 18:59:08.561 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-05-30 18:59:08.562 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-30 18:59:08.563 +05:30 [INF] Hosting environment: Development
+2024-05-30 18:59:08.563 +05:30 [INF] Content root path: D:\VijayN\Najm\Najm-NajmNet-API-GrapQL-POC\src\Demo
+2024-05-30 18:59:08.564 +05:30 [DBG] Hosting started
+2024-05-30 18:59:08.619 +05:30 [DBG] Connection id "0HN40LHU357J4" accepted.
+2024-05-30 18:59:08.619 +05:30 [DBG] Connection id "0HN40LHU357J3" accepted.
+2024-05-30 18:59:08.621 +05:30 [DBG] Connection id "0HN40LHU357J4" started.
+2024-05-30 18:59:08.621 +05:30 [DBG] Connection id "0HN40LHU357J3" started.
+2024-05-30 18:59:08.638 +05:30 [DBG] Connection id "0HN40LHU357J3" received FIN.
+2024-05-30 18:59:08.638 +05:30 [DBG] Connection id "0HN40LHU357J4" received FIN.
+2024-05-30 18:59:08.649 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-30 18:59:08.649 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-30 18:59:08.674 +05:30 [DBG] Connection id "0HN40LHU357J3" stopped.
+2024-05-30 18:59:08.674 +05:30 [DBG] Connection id "0HN40LHU357J4" stopped.
+2024-05-30 18:59:08.678 +05:30 [DBG] Connection id "0HN40LHU357J4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-30 18:59:08.678 +05:30 [DBG] Connection id "0HN40LHU357J3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-30 18:59:13.436 +05:30 [DBG] Connection id "0HN40LHU357J5" accepted.
+2024-05-30 18:59:13.566 +05:30 [DBG] Connection id "0HN40LHU357J5" started.
+2024-05-30 18:59:13.664 +05:30 [DBG] Connection 0HN40LHU357J5 established using the following protocol: "Tls12"
+2024-05-30 18:59:13.771 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/ - null null
+2024-05-30 18:59:13.916 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-05-30 18:59:13.919 +05:30 [DBG] The request path / does not match a supported file type
+2024-05-30 18:59:13.934 +05:30 [DBG] No candidates found for the request path '/'
+2024-05-30 18:59:13.935 +05:30 [DBG] Request did not match any endpoints
+2024-05-30 18:59:13.941 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/ - 404 0 null 177.7882ms
+2024-05-30 18:59:13.948 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7171/, Response status code: 404
+2024-05-30 19:00:07.613 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/graphql/service-worker.js - null null
+2024-05-30 19:00:07.618 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/graphql/bcp-config.json - null null
+2024-05-30 19:00:07.895 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/graphql/service-worker.js - null null
+2024-05-30 19:00:07.953 +05:30 [DBG] The request path /graphql/bcp-config.json does not match an existing file
+2024-05-30 19:00:07.953 +05:30 [DBG] The request path /graphql/service-worker.js does not match an existing file
+2024-05-30 19:00:07.953 +05:30 [DBG] The request path /graphql/service-worker.js does not match an existing file
+2024-05-30 19:00:07.958 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql/bcp-config.json'
+2024-05-30 19:00:07.958 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql/service-worker.js'
+2024-05-30 19:00:07.958 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql/service-worker.js'
+2024-05-30 19:00:07.962 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql/bcp-config.json'
+2024-05-30 19:00:07.962 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql/service-worker.js'
+2024-05-30 19:00:07.963 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql/service-worker.js'
+2024-05-30 19:00:07.964 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:07.965 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:07.967 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:07.981 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:07.982 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:07.982 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:08.004 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:08.005 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/graphql/bcp-config.json - 200 47 application/json; charset=utf-8 387.4087ms
+2024-05-30 19:00:08.114 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 158
+2024-05-30 19:00:08.117 +05:30 [DBG] POST requests are not supported
+2024-05-30 19:00:08.118 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-05-30 19:00:08.120 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-05-30 19:00:08.123 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:08.124 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:08.141 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 161
+2024-05-30 19:00:08.141 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 152
+2024-05-30 19:00:08.141 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 156
+2024-05-30 19:00:08.144 +05:30 [DBG] POST requests are not supported
+2024-05-30 19:00:08.146 +05:30 [DBG] POST requests are not supported
+2024-05-30 19:00:08.148 +05:30 [DBG] POST requests are not supported
+2024-05-30 19:00:08.148 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-05-30 19:00:08.149 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-05-30 19:00:08.150 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-05-30 19:00:08.151 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-05-30 19:00:08.153 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-05-30 19:00:08.154 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-05-30 19:00:08.156 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:08.158 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:08.160 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:08.160 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:08.161 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:08.162 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:08.515 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:08.518 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/service-worker.js - 304 null null 907.1082ms
+2024-05-30 19:00:08.605 +05:30 [DBG] Connection id "0HN40LHU357J5", Request id "0HN40LHU357J5:00000017": started reading request body.
+2024-05-30 19:00:08.605 +05:30 [DBG] Connection id "0HN40LHU357J5", Request id "0HN40LHU357J5:00000019": started reading request body.
+2024-05-30 19:00:08.605 +05:30 [DBG] Connection id "0HN40LHU357J5", Request id "0HN40LHU357J5:0000001B": started reading request body.
+2024-05-30 19:00:08.605 +05:30 [DBG] Connection id "0HN40LHU357J5", Request id "0HN40LHU357J5:0000001D": started reading request body.
+2024-05-30 19:00:08.606 +05:30 [DBG] Connection id "0HN40LHU357J5", Request id "0HN40LHU357J5:00000017": done reading request body.
+2024-05-30 19:00:08.607 +05:30 [DBG] Connection id "0HN40LHU357J5", Request id "0HN40LHU357J5:00000019": done reading request body.
+2024-05-30 19:00:08.608 +05:30 [DBG] Connection id "0HN40LHU357J5", Request id "0HN40LHU357J5:0000001B": done reading request body.
+2024-05-30 19:00:08.610 +05:30 [DBG] Connection id "0HN40LHU357J5", Request id "0HN40LHU357J5:0000001D": done reading request body.
+2024-05-30 19:00:08.750 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:08.750 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:08.750 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:08.750 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:08.751 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 200 null application/graphql-response+json; charset=utf-8 609.8083ms
+2024-05-30 19:00:08.752 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 200 null application/graphql-response+json; charset=utf-8 638.1742ms
+2024-05-30 19:00:08.754 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 200 null application/graphql-response+json; charset=utf-8 612.8ms
+2024-05-30 19:00:08.755 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 200 null application/graphql-response+json; charset=utf-8 614.0734ms
+2024-05-30 19:00:08.788 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 1439
+2024-05-30 19:00:08.791 +05:30 [DBG] POST requests are not supported
+2024-05-30 19:00:08.792 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-05-30 19:00:08.794 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-05-30 19:00:08.795 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:08.796 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:08.797 +05:30 [DBG] Connection id "0HN40LHU357J5", Request id "0HN40LHU357J5:0000001F": started reading request body.
+2024-05-30 19:00:08.798 +05:30 [DBG] Connection id "0HN40LHU357J5", Request id "0HN40LHU357J5:0000001F": done reading request body.
+2024-05-30 19:00:08.828 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:08.829 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 200 null application/graphql-response+json; charset=utf-8 41.6675ms
+2024-05-30 19:00:09.574 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:09.575 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/service-worker.js - 200 null application/javascript 1679.9711ms
+2024-05-30 19:00:09.606 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/graphql/service-worker.js - null null
+2024-05-30 19:00:09.608 +05:30 [DBG] The request path /graphql/service-worker.js does not match an existing file
+2024-05-30 19:00:09.609 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql/service-worker.js'
+2024-05-30 19:00:09.610 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql/service-worker.js'
+2024-05-30 19:00:09.611 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:09.612 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:09.633 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:09.635 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/service-worker.js - 304 null null 29.5035ms
+2024-05-30 19:00:14.090 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 158
+2024-05-30 19:00:14.094 +05:30 [DBG] POST requests are not supported
+2024-05-30 19:00:14.100 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-05-30 19:00:14.102 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-05-30 19:00:14.106 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 161
+2024-05-30 19:00:14.114 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 152
+2024-05-30 19:00:14.114 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 156
+2024-05-30 19:00:14.194 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:14.196 +05:30 [DBG] POST requests are not supported
+2024-05-30 19:00:14.200 +05:30 [DBG] POST requests are not supported
+2024-05-30 19:00:14.202 +05:30 [DBG] POST requests are not supported
+2024-05-30 19:00:14.202 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:14.203 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-05-30 19:00:14.204 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-05-30 19:00:14.205 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-05-30 19:00:14.206 +05:30 [DBG] Connection id "0HN40LHU357J5", Request id "0HN40LHU357J5:00000023": started reading request body.
+2024-05-30 19:00:14.206 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-05-30 19:00:14.207 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-05-30 19:00:14.208 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-05-30 19:00:14.209 +05:30 [DBG] Connection id "0HN40LHU357J5", Request id "0HN40LHU357J5:00000023": done reading request body.
+2024-05-30 19:00:14.210 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:14.211 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:14.212 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:14.215 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:14.215 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:14.218 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:14.220 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:14.221 +05:30 [DBG] Connection id "0HN40LHU357J5", Request id "0HN40LHU357J5:00000025": started reading request body.
+2024-05-30 19:00:14.222 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 200 null application/graphql-response+json; charset=utf-8 132.1877ms
+2024-05-30 19:00:14.223 +05:30 [DBG] Connection id "0HN40LHU357J5", Request id "0HN40LHU357J5:00000027": started reading request body.
+2024-05-30 19:00:14.224 +05:30 [DBG] Connection id "0HN40LHU357J5", Request id "0HN40LHU357J5:00000029": started reading request body.
+2024-05-30 19:00:14.225 +05:30 [DBG] Connection id "0HN40LHU357J5", Request id "0HN40LHU357J5:00000025": done reading request body.
+2024-05-30 19:00:14.230 +05:30 [DBG] Connection id "0HN40LHU357J5", Request id "0HN40LHU357J5:00000027": done reading request body.
+2024-05-30 19:00:14.232 +05:30 [DBG] Connection id "0HN40LHU357J5", Request id "0HN40LHU357J5:00000029": done reading request body.
+2024-05-30 19:00:14.235 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:14.237 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:14.238 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:14.239 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 200 null application/graphql-response+json; charset=utf-8 133.746ms
+2024-05-30 19:00:14.240 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 200 null application/graphql-response+json; charset=utf-8 126.5395ms
+2024-05-30 19:00:14.242 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 200 null application/graphql-response+json; charset=utf-8 127.5689ms
+2024-05-30 19:00:14.257 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 1439
+2024-05-30 19:00:14.261 +05:30 [DBG] POST requests are not supported
+2024-05-30 19:00:14.262 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-05-30 19:00:14.266 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-05-30 19:00:14.270 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:14.271 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:14.273 +05:30 [DBG] Connection id "0HN40LHU357J5", Request id "0HN40LHU357J5:0000002B": started reading request body.
+2024-05-30 19:00:14.276 +05:30 [DBG] Connection id "0HN40LHU357J5", Request id "0HN40LHU357J5:0000002B": done reading request body.
+2024-05-30 19:00:14.280 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:00:14.283 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 200 null application/graphql-response+json; charset=utf-8 25.4083ms
+2024-05-30 19:00:54.009 +05:30 [DBG] Hosting starting
+2024-05-30 19:00:55.054 +05:30 [INF] Now listening on: https://localhost:7171
+2024-05-30 19:00:55.056 +05:30 [INF] Now listening on: http://localhost:5107
+2024-05-30 19:00:55.057 +05:30 [DBG] Loaded hosting startup assembly Demo
+2024-05-30 19:00:55.058 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-05-30 19:00:55.059 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-05-30 19:00:55.060 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-30 19:00:55.061 +05:30 [INF] Hosting environment: Development
+2024-05-30 19:00:55.062 +05:30 [INF] Content root path: D:\VijayN\Najm\Najm-NajmNet-API-GrapQL-POC\src\Demo
+2024-05-30 19:00:55.063 +05:30 [DBG] Hosting started
+2024-05-30 19:00:55.380 +05:30 [DBG] Connection id "0HN40LITTA1R4" accepted.
+2024-05-30 19:00:55.382 +05:30 [DBG] Connection id "0HN40LITTA1R4" started.
+2024-05-30 19:00:55.390 +05:30 [DBG] Connection id "0HN40LITTA1R5" accepted.
+2024-05-30 19:00:55.391 +05:30 [DBG] Connection id "0HN40LITTA1R5" started.
+2024-05-30 19:00:55.420 +05:30 [DBG] Connection id "0HN40LITTA1R4" received FIN.
+2024-05-30 19:00:55.420 +05:30 [DBG] Connection id "0HN40LITTA1R5" received FIN.
+2024-05-30 19:00:55.427 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-30 19:00:55.427 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-30 19:00:55.452 +05:30 [DBG] Connection id "0HN40LITTA1R5" stopped.
+2024-05-30 19:00:55.452 +05:30 [DBG] Connection id "0HN40LITTA1R4" stopped.
+2024-05-30 19:00:55.456 +05:30 [DBG] Connection id "0HN40LITTA1R5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-30 19:00:55.456 +05:30 [DBG] Connection id "0HN40LITTA1R4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-30 19:00:56.935 +05:30 [DBG] Connection id "0HN40LITTA1R6" accepted.
+2024-05-30 19:00:56.936 +05:30 [DBG] Connection id "0HN40LITTA1R6" started.
+2024-05-30 19:00:56.979 +05:30 [DBG] Connection 0HN40LITTA1R6 established using the following protocol: "Tls12"
+2024-05-30 19:00:57.037 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/ - null null
+2024-05-30 19:00:57.141 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-05-30 19:00:57.144 +05:30 [DBG] The request path / does not match a supported file type
+2024-05-30 19:00:57.160 +05:30 [DBG] No candidates found for the request path '/'
+2024-05-30 19:00:57.161 +05:30 [DBG] Request did not match any endpoints
+2024-05-30 19:00:57.165 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/ - 404 0 null 134.3145ms
+2024-05-30 19:00:57.169 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7171/, Response status code: 404
+2024-05-30 19:01:01.942 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/playground/ - null null
+2024-05-30 19:01:01.948 +05:30 [DBG] The request path /playground/ does not match a supported file type
+2024-05-30 19:01:01.957 +05:30 [DBG] 1 candidate(s) found for the request path '/playground/'
+2024-05-30 19:01:01.958 +05:30 [DBG] Request matched endpoint 'GraphQL Playground'
+2024-05-30 19:01:01.964 +05:30 [INF] Executing endpoint 'GraphQL Playground'
+2024-05-30 19:01:01.973 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-05-30 19:01:01.975 +05:30 [INF] Executed endpoint 'GraphQL Playground'
+2024-05-30 19:01:01.976 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-05-30 19:01:01.977 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/playground/ - 200 null text/html 35.7917ms
+2024-05-30 19:01:02.011 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-30 19:01:02.026 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2024-05-30 19:01:02.049 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 38.9672ms
+2024-05-30 19:01:02.080 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 53.4219ms
+2024-05-30 19:01:02.782 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 1468
+2024-05-30 19:01:02.786 +05:30 [DBG] POST requests are not supported
+2024-05-30 19:01:02.788 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-05-30 19:01:02.792 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-05-30 19:01:02.794 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:01:02.795 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:01:03.189 +05:30 [DBG] Connection id "0HN40LITTA1R6", Request id "0HN40LITTA1R6:00000017": started reading request body.
+2024-05-30 19:01:03.191 +05:30 [DBG] Connection id "0HN40LITTA1R6", Request id "0HN40LITTA1R6:00000017": done reading request body.
+2024-05-30 19:01:03.313 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:01:03.315 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 200 null application/graphql-response+json; charset=utf-8 532.9865ms
+2024-05-30 19:01:32.994 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 1468
+2024-05-30 19:01:33.000 +05:30 [DBG] POST requests are not supported
+2024-05-30 19:01:33.003 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-05-30 19:01:33.006 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-05-30 19:01:33.015 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:01:33.016 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:01:33.017 +05:30 [DBG] Connection id "0HN40LITTA1R6", Request id "0HN40LITTA1R6:00000019": started reading request body.
+2024-05-30 19:01:33.018 +05:30 [DBG] Connection id "0HN40LITTA1R6", Request id "0HN40LITTA1R6:00000019": done reading request body.
+2024-05-30 19:01:33.026 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:01:33.027 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 200 null application/graphql-response+json; charset=utf-8 34.0267ms
+2024-05-30 19:04:27.631 +05:30 [DBG] Hosting starting
+2024-05-30 19:04:28.686 +05:30 [INF] Now listening on: https://localhost:7171
+2024-05-30 19:04:28.688 +05:30 [INF] Now listening on: http://localhost:5107
+2024-05-30 19:04:28.688 +05:30 [DBG] Loaded hosting startup assembly Demo
+2024-05-30 19:04:28.689 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-05-30 19:04:28.689 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-05-30 19:04:28.690 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-30 19:04:28.691 +05:30 [INF] Hosting environment: Development
+2024-05-30 19:04:28.692 +05:30 [INF] Content root path: D:\VijayN\Najm\Najm-NajmNet-API-GrapQL-POC\src\Demo
+2024-05-30 19:04:28.692 +05:30 [DBG] Hosting started
+2024-05-30 19:04:28.738 +05:30 [DBG] Connection id "0HN40LKTG1OAH" accepted.
+2024-05-30 19:04:28.740 +05:30 [DBG] Connection id "0HN40LKTG1OAH" started.
+2024-05-30 19:04:28.749 +05:30 [DBG] Connection id "0HN40LKTG1OAI" received FIN.
+2024-05-30 19:04:28.749 +05:30 [DBG] Connection id "0HN40LKTG1OAH" received FIN.
+2024-05-30 19:04:28.750 +05:30 [DBG] Connection id "0HN40LKTG1OAI" accepted.
+2024-05-30 19:04:28.751 +05:30 [DBG] Connection id "0HN40LKTG1OAI" started.
+2024-05-30 19:04:28.761 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-30 19:04:28.761 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-30 19:04:28.801 +05:30 [DBG] Connection id "0HN40LKTG1OAI" stopped.
+2024-05-30 19:04:28.801 +05:30 [DBG] Connection id "0HN40LKTG1OAH" stopped.
+2024-05-30 19:04:28.804 +05:30 [DBG] Connection id "0HN40LKTG1OAH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-30 19:04:28.804 +05:30 [DBG] Connection id "0HN40LKTG1OAI" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-30 19:04:30.698 +05:30 [DBG] Connection id "0HN40LKTG1OAJ" accepted.
+2024-05-30 19:04:30.700 +05:30 [DBG] Connection id "0HN40LKTG1OAJ" started.
+2024-05-30 19:04:30.748 +05:30 [DBG] Connection 0HN40LKTG1OAJ established using the following protocol: "Tls12"
+2024-05-30 19:04:30.804 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/ - null null
+2024-05-30 19:04:30.912 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-05-30 19:04:30.914 +05:30 [DBG] The request path / does not match a supported file type
+2024-05-30 19:04:30.931 +05:30 [DBG] No candidates found for the request path '/'
+2024-05-30 19:04:30.933 +05:30 [DBG] Request did not match any endpoints
+2024-05-30 19:04:30.936 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/ - 404 0 null 136.3607ms
+2024-05-30 19:04:30.941 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7171/, Response status code: 404
+2024-05-30 19:04:44.966 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/ - null null
+2024-05-30 19:04:44.976 +05:30 [DBG] The request path / does not match a supported file type
+2024-05-30 19:04:44.978 +05:30 [DBG] No candidates found for the request path '/'
+2024-05-30 19:04:44.979 +05:30 [DBG] Request did not match any endpoints
+2024-05-30 19:04:44.981 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/ - 404 0 null 15.7706ms
+2024-05-30 19:04:44.983 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7171/, Response status code: 404
+2024-05-30 19:04:49.253 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/playground/ - null null
+2024-05-30 19:04:49.258 +05:30 [DBG] The request path /playground/ does not match a supported file type
+2024-05-30 19:04:49.266 +05:30 [DBG] 1 candidate(s) found for the request path '/playground/'
+2024-05-30 19:04:49.267 +05:30 [DBG] Request matched endpoint 'GraphQL Playground'
+2024-05-30 19:04:49.275 +05:30 [INF] Executing endpoint 'GraphQL Playground'
+2024-05-30 19:04:49.286 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-05-30 19:04:49.288 +05:30 [INF] Executed endpoint 'GraphQL Playground'
+2024-05-30 19:04:49.288 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-05-30 19:04:49.289 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/playground/ - 200 null text/html 36.2819ms
+2024-05-30 19:04:49.324 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2024-05-30 19:04:49.326 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-30 19:04:49.361 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 35.4079ms
+2024-05-30 19:04:49.385 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 60.5159ms
+2024-05-30 19:04:50.082 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 1468
+2024-05-30 19:04:50.084 +05:30 [DBG] POST requests are not supported
+2024-05-30 19:04:50.087 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-05-30 19:04:50.090 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-05-30 19:04:50.093 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:04:50.094 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:04:50.495 +05:30 [DBG] Connection id "0HN40LKTG1OAJ", Request id "0HN40LKTG1OAJ:00000019": started reading request body.
+2024-05-30 19:04:50.497 +05:30 [DBG] Connection id "0HN40LKTG1OAJ", Request id "0HN40LKTG1OAJ:00000019": done reading request body.
+2024-05-30 19:04:50.626 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:04:50.628 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 200 null application/graphql-response+json; charset=utf-8 546.0798ms
+2024-05-30 19:06:28.125 +05:30 [DBG] Hosting starting
+2024-05-30 19:06:28.637 +05:30 [INF] Now listening on: https://localhost:7171
+2024-05-30 19:06:28.640 +05:30 [INF] Now listening on: http://localhost:5107
+2024-05-30 19:06:28.640 +05:30 [DBG] Loaded hosting startup assembly Demo
+2024-05-30 19:06:28.641 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-05-30 19:06:28.642 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-05-30 19:06:28.643 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-30 19:06:28.644 +05:30 [INF] Hosting environment: Development
+2024-05-30 19:06:28.645 +05:30 [INF] Content root path: D:\VijayN\Najm\Najm-NajmNet-API-GrapQL-POC\src\Demo
+2024-05-30 19:06:28.645 +05:30 [DBG] Hosting started
+2024-05-30 19:06:28.947 +05:30 [DBG] Connection id "0HN40LM1AELU9" accepted.
+2024-05-30 19:06:28.949 +05:30 [DBG] Connection id "0HN40LM1AELU9" started.
+2024-05-30 19:06:28.973 +05:30 [DBG] Connection id "0HN40LM1AELU9" received FIN.
+2024-05-30 19:06:28.973 +05:30 [DBG] Connection id "0HN40LM1AELUA" received FIN.
+2024-05-30 19:06:28.976 +05:30 [DBG] Connection id "0HN40LM1AELUA" accepted.
+2024-05-30 19:06:28.977 +05:30 [DBG] Connection id "0HN40LM1AELUA" started.
+2024-05-30 19:06:28.981 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-30 19:06:28.981 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-30 19:06:29.006 +05:30 [DBG] Connection id "0HN40LM1AELUA" stopped.
+2024-05-30 19:06:29.006 +05:30 [DBG] Connection id "0HN40LM1AELU9" stopped.
+2024-05-30 19:06:29.010 +05:30 [DBG] Connection id "0HN40LM1AELU9" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-30 19:06:29.010 +05:30 [DBG] Connection id "0HN40LM1AELUA" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-30 19:06:30.803 +05:30 [DBG] Connection id "0HN40LM1AELUB" accepted.
+2024-05-30 19:06:30.804 +05:30 [DBG] Connection id "0HN40LM1AELUB" started.
+2024-05-30 19:06:30.843 +05:30 [DBG] Connection 0HN40LM1AELUB established using the following protocol: "Tls12"
+2024-05-30 19:06:30.910 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/ - null null
+2024-05-30 19:06:30.989 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-05-30 19:06:30.991 +05:30 [DBG] The request path / does not match a supported file type
+2024-05-30 19:06:31.006 +05:30 [DBG] No candidates found for the request path '/'
+2024-05-30 19:06:31.008 +05:30 [DBG] Request did not match any endpoints
+2024-05-30 19:06:31.010 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/ - 404 0 null 105.1446ms
+2024-05-30 19:06:31.016 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7171/, Response status code: 404
+2024-05-30 19:06:34.047 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/graphql/bcp-config.json - null null
+2024-05-30 19:06:34.059 +05:30 [DBG] The request path /graphql/bcp-config.json does not match an existing file
+2024-05-30 19:06:34.074 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql/bcp-config.json'
+2024-05-30 19:06:34.083 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql/bcp-config.json'
+2024-05-30 19:06:34.087 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:06:34.098 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:06:34.131 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:06:34.134 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/graphql/bcp-config.json - 404 0 null 87.0004ms
+2024-05-30 19:06:34.249 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/graphql/service-worker.js - null null
+2024-05-30 19:06:34.253 +05:30 [DBG] The request path /graphql/service-worker.js does not match an existing file
+2024-05-30 19:06:34.255 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql/service-worker.js'
+2024-05-30 19:06:34.257 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql/service-worker.js'
+2024-05-30 19:06:34.266 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:06:34.269 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:06:34.270 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:06:34.273 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/graphql/service-worker.js - 404 0 null 23.0998ms
+2024-05-30 19:06:34.483 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 158
+2024-05-30 19:06:34.486 +05:30 [DBG] POST requests are not supported
+2024-05-30 19:06:34.487 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-05-30 19:06:34.489 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-05-30 19:06:34.492 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:06:34.499 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:06:34.517 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 161
+2024-05-30 19:06:34.517 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 152
+2024-05-30 19:06:34.519 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 156
+2024-05-30 19:06:34.528 +05:30 [DBG] POST requests are not supported
+2024-05-30 19:06:34.532 +05:30 [DBG] POST requests are not supported
+2024-05-30 19:06:34.534 +05:30 [DBG] POST requests are not supported
+2024-05-30 19:06:34.535 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-05-30 19:06:34.536 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-05-30 19:06:34.537 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-05-30 19:06:34.538 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-05-30 19:06:34.539 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-05-30 19:06:34.540 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-05-30 19:06:34.543 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:06:34.545 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:06:34.547 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:06:34.548 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:06:34.549 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:06:34.550 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:06:34.966 +05:30 [DBG] Connection id "0HN40LM1AELUB", Request id "0HN40LM1AELUB:0000001B": started reading request body.
+2024-05-30 19:06:34.966 +05:30 [DBG] Connection id "0HN40LM1AELUB", Request id "0HN40LM1AELUB:00000017": started reading request body.
+2024-05-30 19:06:34.966 +05:30 [DBG] Connection id "0HN40LM1AELUB", Request id "0HN40LM1AELUB:00000019": started reading request body.
+2024-05-30 19:06:34.966 +05:30 [DBG] Connection id "0HN40LM1AELUB", Request id "0HN40LM1AELUB:00000015": started reading request body.
+2024-05-30 19:06:34.967 +05:30 [DBG] Connection id "0HN40LM1AELUB", Request id "0HN40LM1AELUB:0000001B": done reading request body.
+2024-05-30 19:06:34.968 +05:30 [DBG] Connection id "0HN40LM1AELUB", Request id "0HN40LM1AELUB:00000017": done reading request body.
+2024-05-30 19:06:34.969 +05:30 [DBG] Connection id "0HN40LM1AELUB", Request id "0HN40LM1AELUB:00000019": done reading request body.
+2024-05-30 19:06:34.970 +05:30 [DBG] Connection id "0HN40LM1AELUB", Request id "0HN40LM1AELUB:00000015": done reading request body.
+2024-05-30 19:06:35.123 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:06:35.125 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:06:35.125 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:06:35.125 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:06:35.127 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 200 null application/graphql-response+json; charset=utf-8 643.4347ms
+2024-05-30 19:06:35.127 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 200 null application/graphql-response+json; charset=utf-8 609.0983ms
+2024-05-30 19:06:35.128 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 200 null application/graphql-response+json; charset=utf-8 610.9557ms
+2024-05-30 19:06:35.130 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 200 null application/graphql-response+json; charset=utf-8 612.8153ms
+2024-05-30 19:06:35.236 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 1439
+2024-05-30 19:06:35.239 +05:30 [DBG] POST requests are not supported
+2024-05-30 19:06:35.241 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-05-30 19:06:35.243 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-05-30 19:06:35.246 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:06:35.247 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:06:35.248 +05:30 [DBG] Connection id "0HN40LM1AELUB", Request id "0HN40LM1AELUB:0000001D": started reading request body.
+2024-05-30 19:06:35.249 +05:30 [DBG] Connection id "0HN40LM1AELUB", Request id "0HN40LM1AELUB:0000001D": done reading request body.
+2024-05-30 19:06:35.275 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:06:35.276 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 200 null application/graphql-response+json; charset=utf-8 39.9233ms
+2024-05-30 19:06:35.288 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/graphql/service-worker.js - null null
+2024-05-30 19:06:35.290 +05:30 [DBG] The request path /graphql/service-worker.js does not match an existing file
+2024-05-30 19:06:35.292 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql/service-worker.js'
+2024-05-30 19:06:35.293 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql/service-worker.js'
+2024-05-30 19:06:35.295 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:06:35.295 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:06:35.296 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:06:35.297 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/graphql/service-worker.js - 404 0 null 8.8763ms
+2024-05-30 19:06:41.045 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/playground/ - null null
+2024-05-30 19:06:41.059 +05:30 [DBG] The request path /playground/ does not match a supported file type
+2024-05-30 19:06:41.061 +05:30 [DBG] 1 candidate(s) found for the request path '/playground/'
+2024-05-30 19:06:41.062 +05:30 [DBG] Request matched endpoint 'GraphQL Playground'
+2024-05-30 19:06:41.063 +05:30 [INF] Executing endpoint 'GraphQL Playground'
+2024-05-30 19:06:41.077 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-05-30 19:06:41.080 +05:30 [INF] Executed endpoint 'GraphQL Playground'
+2024-05-30 19:06:41.081 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-05-30 19:06:41.081 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/playground/ - 200 null text/html 36.104ms
+2024-05-30 19:06:41.127 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-30 19:06:41.133 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2024-05-30 19:06:41.146 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 19.3844ms
+2024-05-30 19:06:41.187 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 54.1132ms
+2024-05-30 19:06:41.900 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 1468
+2024-05-30 19:06:41.911 +05:30 [DBG] POST requests are not supported
+2024-05-30 19:06:41.914 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-05-30 19:06:41.918 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-05-30 19:06:41.922 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:06:41.924 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:06:41.925 +05:30 [DBG] Connection id "0HN40LM1AELUB", Request id "0HN40LM1AELUB:00000027": started reading request body.
+2024-05-30 19:06:41.926 +05:30 [DBG] Connection id "0HN40LM1AELUB", Request id "0HN40LM1AELUB:00000027": done reading request body.
+2024-05-30 19:06:41.932 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:06:41.933 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 200 null application/graphql-response+json; charset=utf-8 33.5413ms
+2024-05-30 19:07:06.536 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 1468
+2024-05-30 19:07:06.539 +05:30 [DBG] POST requests are not supported
+2024-05-30 19:07:06.540 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-05-30 19:07:06.541 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-05-30 19:07:06.549 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:07:06.552 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:07:06.553 +05:30 [DBG] Connection id "0HN40LM1AELUB", Request id "0HN40LM1AELUB:00000029": started reading request body.
+2024-05-30 19:07:06.554 +05:30 [DBG] Connection id "0HN40LM1AELUB", Request id "0HN40LM1AELUB:00000029": done reading request body.
+2024-05-30 19:07:06.557 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:07:06.558 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 200 null application/graphql-response+json; charset=utf-8 21.9144ms
+2024-05-30 19:07:25.904 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 184
+2024-05-30 19:07:25.907 +05:30 [DBG] POST requests are not supported
+2024-05-30 19:07:25.908 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-05-30 19:07:25.909 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-05-30 19:07:25.912 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:07:25.913 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:07:25.915 +05:30 [DBG] Connection id "0HN40LM1AELUB", Request id "0HN40LM1AELUB:0000002B": started reading request body.
+2024-05-30 19:07:25.919 +05:30 [DBG] Connection id "0HN40LM1AELUB", Request id "0HN40LM1AELUB:0000002B": done reading request body.
+2024-05-30 19:07:25.932 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:07:25.933 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 400 null application/graphql-response+json; charset=utf-8 28.5671ms
+2024-05-30 19:07:55.188 +05:30 [DBG] Hosting starting
+2024-05-30 19:07:55.426 +05:30 [INF] Now listening on: https://localhost:7171
+2024-05-30 19:07:55.428 +05:30 [INF] Now listening on: http://localhost:5107
+2024-05-30 19:07:55.428 +05:30 [DBG] Loaded hosting startup assembly Demo
+2024-05-30 19:07:55.429 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-05-30 19:07:55.429 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-05-30 19:07:55.430 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-30 19:07:55.431 +05:30 [INF] Hosting environment: Development
+2024-05-30 19:07:55.432 +05:30 [INF] Content root path: D:\VijayN\Najm\Najm-NajmNet-API-GrapQL-POC\src\Demo
+2024-05-30 19:07:55.433 +05:30 [DBG] Hosting started
+2024-05-30 19:07:55.484 +05:30 [DBG] Connection id "0HN40LMR3NMRD" accepted.
+2024-05-30 19:07:55.486 +05:30 [DBG] Connection id "0HN40LMR3NMRD" started.
+2024-05-30 19:07:55.494 +05:30 [DBG] Connection id "0HN40LMR3NMRE" accepted.
+2024-05-30 19:07:55.496 +05:30 [DBG] Connection id "0HN40LMR3NMRE" started.
+2024-05-30 19:07:55.526 +05:30 [DBG] Connection id "0HN40LMR3NMRE" received FIN.
+2024-05-30 19:07:55.526 +05:30 [DBG] Connection id "0HN40LMR3NMRD" received FIN.
+2024-05-30 19:07:55.536 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-30 19:07:55.536 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-30 19:07:55.581 +05:30 [DBG] Connection id "0HN40LMR3NMRD" stopped.
+2024-05-30 19:07:55.581 +05:30 [DBG] Connection id "0HN40LMR3NMRE" stopped.
+2024-05-30 19:07:55.587 +05:30 [DBG] Connection id "0HN40LMR3NMRD" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-30 19:07:55.587 +05:30 [DBG] Connection id "0HN40LMR3NMRE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-30 19:07:55.827 +05:30 [DBG] Connection id "0HN40LMR3NMRF" accepted.
+2024-05-30 19:07:55.829 +05:30 [DBG] Connection id "0HN40LMR3NMRF" started.
+2024-05-30 19:07:55.875 +05:30 [DBG] Connection 0HN40LMR3NMRF established using the following protocol: "Tls12"
+2024-05-30 19:07:55.941 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/ - null null
+2024-05-30 19:07:56.041 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-05-30 19:07:56.044 +05:30 [DBG] The request path / does not match a supported file type
+2024-05-30 19:07:56.058 +05:30 [DBG] No candidates found for the request path '/'
+2024-05-30 19:07:56.059 +05:30 [DBG] Request did not match any endpoints
+2024-05-30 19:07:56.062 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/ - 404 0 null 127.6552ms
+2024-05-30 19:07:56.067 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7171/, Response status code: 404
+2024-05-30 19:08:00.473 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/playground/ - null null
+2024-05-30 19:08:00.479 +05:30 [DBG] The request path /playground/ does not match a supported file type
+2024-05-30 19:08:00.488 +05:30 [DBG] 1 candidate(s) found for the request path '/playground/'
+2024-05-30 19:08:00.489 +05:30 [DBG] Request matched endpoint 'GraphQL Playground'
+2024-05-30 19:08:00.497 +05:30 [INF] Executing endpoint 'GraphQL Playground'
+2024-05-30 19:08:00.507 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-05-30 19:08:00.509 +05:30 [INF] Executed endpoint 'GraphQL Playground'
+2024-05-30 19:08:00.511 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-05-30 19:08:00.512 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/playground/ - 200 null text/html 39.7486ms
+2024-05-30 19:08:00.553 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-30 19:08:00.556 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2024-05-30 19:08:00.591 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 38.3539ms
+2024-05-30 19:08:00.618 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 61.4919ms
+2024-05-30 19:08:01.303 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 1468
+2024-05-30 19:08:01.306 +05:30 [DBG] POST requests are not supported
+2024-05-30 19:08:01.308 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-05-30 19:08:01.312 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-05-30 19:08:01.315 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:08:01.316 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:08:01.699 +05:30 [DBG] Connection id "0HN40LMR3NMRF", Request id "0HN40LMR3NMRF:00000017": started reading request body.
+2024-05-30 19:08:01.701 +05:30 [DBG] Connection id "0HN40LMR3NMRF", Request id "0HN40LMR3NMRF:00000017": done reading request body.
+2024-05-30 19:08:01.833 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:08:01.835 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 200 null application/graphql-response+json; charset=utf-8 531.8277ms
+2024-05-30 19:08:02.040 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 184
+2024-05-30 19:08:02.043 +05:30 [DBG] POST requests are not supported
+2024-05-30 19:08:02.045 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-05-30 19:08:02.046 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-05-30 19:08:02.048 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:08:02.049 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:08:02.050 +05:30 [DBG] Connection id "0HN40LMR3NMRF", Request id "0HN40LMR3NMRF:00000019": started reading request body.
+2024-05-30 19:08:02.053 +05:30 [DBG] Connection id "0HN40LMR3NMRF", Request id "0HN40LMR3NMRF:00000019": done reading request body.
+2024-05-30 19:08:02.067 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:08:02.068 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 200 null application/graphql-response+json; charset=utf-8 28.6479ms
+2024-05-30 19:08:47.269 +05:30 [DBG] Hosting starting
+2024-05-30 19:08:47.927 +05:30 [INF] Now listening on: https://localhost:7171
+2024-05-30 19:08:47.929 +05:30 [INF] Now listening on: http://localhost:5107
+2024-05-30 19:08:47.930 +05:30 [DBG] Loaded hosting startup assembly Demo
+2024-05-30 19:08:47.931 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-05-30 19:08:47.932 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-05-30 19:08:47.932 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-30 19:08:47.933 +05:30 [INF] Hosting environment: Development
+2024-05-30 19:08:47.934 +05:30 [INF] Content root path: D:\VijayN\Najm\Najm-NajmNet-API-GrapQL-POC\src\Demo
+2024-05-30 19:08:47.935 +05:30 [DBG] Hosting started
+2024-05-30 19:08:48.218 +05:30 [DBG] Connection id "0HN40LNAQKS89" accepted.
+2024-05-30 19:08:48.218 +05:30 [DBG] Connection id "0HN40LNAQKS8A" accepted.
+2024-05-30 19:08:48.221 +05:30 [DBG] Connection id "0HN40LNAQKS89" started.
+2024-05-30 19:08:48.221 +05:30 [DBG] Connection id "0HN40LNAQKS8A" started.
+2024-05-30 19:08:48.242 +05:30 [DBG] Connection id "0HN40LNAQKS89" received FIN.
+2024-05-30 19:08:48.242 +05:30 [DBG] Connection id "0HN40LNAQKS8A" received FIN.
+2024-05-30 19:08:48.248 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-30 19:08:48.248 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-05-30 19:08:48.273 +05:30 [DBG] Connection id "0HN40LNAQKS89" stopped.
+2024-05-30 19:08:48.273 +05:30 [DBG] Connection id "0HN40LNAQKS8A" stopped.
+2024-05-30 19:08:48.277 +05:30 [DBG] Connection id "0HN40LNAQKS8A" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-30 19:08:48.277 +05:30 [DBG] Connection id "0HN40LNAQKS89" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-30 19:08:50.045 +05:30 [DBG] Connection id "0HN40LNAQKS8B" accepted.
+2024-05-30 19:08:50.047 +05:30 [DBG] Connection id "0HN40LNAQKS8B" started.
+2024-05-30 19:08:50.093 +05:30 [DBG] Connection 0HN40LNAQKS8B established using the following protocol: "Tls12"
+2024-05-30 19:08:50.175 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/ - null null
+2024-05-30 19:08:50.360 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-05-30 19:08:50.362 +05:30 [DBG] The request path / does not match a supported file type
+2024-05-30 19:08:50.378 +05:30 [DBG] No candidates found for the request path '/'
+2024-05-30 19:08:50.379 +05:30 [DBG] Request did not match any endpoints
+2024-05-30 19:08:50.383 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/ - 404 0 null 219.226ms
+2024-05-30 19:08:50.387 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7171/, Response status code: 404
+2024-05-30 19:08:55.841 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/playground/ - null null
+2024-05-30 19:08:55.849 +05:30 [DBG] The request path /playground/ does not match a supported file type
+2024-05-30 19:08:55.858 +05:30 [DBG] 1 candidate(s) found for the request path '/playground/'
+2024-05-30 19:08:55.860 +05:30 [DBG] Request matched endpoint 'GraphQL Playground'
+2024-05-30 19:08:55.869 +05:30 [INF] Executing endpoint 'GraphQL Playground'
+2024-05-30 19:08:55.878 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-05-30 19:08:55.881 +05:30 [INF] Executed endpoint 'GraphQL Playground'
+2024-05-30 19:08:55.882 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-05-30 19:08:55.883 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/playground/ - 200 null text/html 41.6828ms
+2024-05-30 19:08:55.922 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2024-05-30 19:08:55.922 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-30 19:08:55.957 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 34.7176ms
+2024-05-30 19:08:55.983 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 62.5454ms
+2024-05-30 19:08:56.671 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 1468
+2024-05-30 19:08:56.679 +05:30 [DBG] POST requests are not supported
+2024-05-30 19:08:56.685 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-05-30 19:08:56.689 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-05-30 19:08:56.690 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:08:56.691 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:08:57.061 +05:30 [DBG] Connection id "0HN40LNAQKS8B", Request id "0HN40LNAQKS8B:00000017": started reading request body.
+2024-05-30 19:08:57.063 +05:30 [DBG] Connection id "0HN40LNAQKS8B", Request id "0HN40LNAQKS8B:00000017": done reading request body.
+2024-05-30 19:08:57.191 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:08:57.194 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 200 null application/graphql-response+json; charset=utf-8 523.0882ms
+2024-05-30 19:08:57.737 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 184
+2024-05-30 19:08:57.740 +05:30 [DBG] POST requests are not supported
+2024-05-30 19:08:57.741 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-05-30 19:08:57.742 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-05-30 19:08:57.744 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:08:57.745 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:08:57.746 +05:30 [DBG] Connection id "0HN40LNAQKS8B", Request id "0HN40LNAQKS8B:00000019": started reading request body.
+2024-05-30 19:08:57.750 +05:30 [DBG] Connection id "0HN40LNAQKS8B", Request id "0HN40LNAQKS8B:00000019": done reading request body.
+2024-05-30 19:08:57.763 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:08:57.764 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 200 null application/graphql-response+json; charset=utf-8 26.6723ms
+2024-05-30 19:09:09.285 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 1468
+2024-05-30 19:09:09.292 +05:30 [DBG] POST requests are not supported
+2024-05-30 19:09:09.294 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-05-30 19:09:09.296 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-05-30 19:09:09.301 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:09:09.303 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:09:09.305 +05:30 [DBG] Connection id "0HN40LNAQKS8B", Request id "0HN40LNAQKS8B:0000001B": started reading request body.
+2024-05-30 19:09:09.308 +05:30 [DBG] Connection id "0HN40LNAQKS8B", Request id "0HN40LNAQKS8B:0000001B": done reading request body.
+2024-05-30 19:09:09.316 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:09:09.317 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 200 null application/graphql-response+json; charset=utf-8 33.0808ms
+2024-05-30 19:09:11.129 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 1468
+2024-05-30 19:09:11.139 +05:30 [DBG] POST requests are not supported
+2024-05-30 19:09:11.141 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-05-30 19:09:11.142 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-05-30 19:09:11.144 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:09:11.145 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:09:11.234 +05:30 [DBG] Connection id "0HN40LNAQKS8B", Request id "0HN40LNAQKS8B:0000001D": started reading request body.
+2024-05-30 19:09:11.240 +05:30 [DBG] Connection id "0HN40LNAQKS8B", Request id "0HN40LNAQKS8B:0000001D": done reading request body.
+2024-05-30 19:09:11.245 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:09:11.246 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 200 null application/graphql-response+json; charset=utf-8 117.5383ms
+2024-05-30 19:09:13.356 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 1468
+2024-05-30 19:09:13.367 +05:30 [DBG] POST requests are not supported
+2024-05-30 19:09:13.370 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-05-30 19:09:13.373 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-05-30 19:09:13.375 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:09:13.376 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:09:13.377 +05:30 [DBG] Connection id "0HN40LNAQKS8B", Request id "0HN40LNAQKS8B:0000001F": started reading request body.
+2024-05-30 19:09:13.378 +05:30 [DBG] Connection id "0HN40LNAQKS8B", Request id "0HN40LNAQKS8B:0000001F": done reading request body.
+2024-05-30 19:09:13.381 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:09:13.382 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 200 null application/graphql-response+json; charset=utf-8 26.3633ms
+2024-05-30 19:09:20.063 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7171/graphql - application/json 1468
+2024-05-30 19:09:20.083 +05:30 [DBG] POST requests are not supported
+2024-05-30 19:09:20.086 +05:30 [DBG] 1 candidate(s) found for the request path '/graphql'
+2024-05-30 19:09:20.090 +05:30 [DBG] Endpoint 'Hot Chocolate GraphQL Pipeline' with route pattern '/graphql/{**slug}' is valid for the request path '/graphql'
+2024-05-30 19:09:20.093 +05:30 [DBG] Request matched endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:09:20.095 +05:30 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:09:20.097 +05:30 [DBG] Connection id "0HN40LNAQKS8B", Request id "0HN40LNAQKS8B:00000021": started reading request body.
+2024-05-30 19:09:20.101 +05:30 [DBG] Connection id "0HN40LNAQKS8B", Request id "0HN40LNAQKS8B:00000021": done reading request body.
+2024-05-30 19:09:20.109 +05:30 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2024-05-30 19:09:20.112 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7171/graphql - 200 null application/graphql-response+json; charset=utf-8 49.8449ms
+2024-05-30 19:12:10.586 +05:30 [DBG] Connection id "0HN40LNAQKS8B" received FIN.
+2024-05-30 19:12:10.601 +05:30 [DBG] Connection id "0HN40LNAQKS8B" is closing.
+2024-05-30 19:12:10.609 +05:30 [DBG] The connection queue processing loop for 0HN40LNAQKS8B completed.
+2024-05-30 19:12:10.609 +05:30 [DBG] Connection id "0HN40LNAQKS8B" is closed. The last processed stream ID was 33.
+2024-05-30 19:12:10.611 +05:30 [DBG] Connection id "0HN40LNAQKS8B" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-30 19:12:10.615 +05:30 [DBG] Connection id "0HN40LNAQKS8B" stopped.
+2024-05-30 19:20:17.987 +05:30 [DBG] Connection id "0HN40LNAQKS8C" accepted.
+2024-05-30 19:20:18.002 +05:30 [DBG] Connection id "0HN40LNAQKS8C" started.
+2024-05-30 19:20:18.012 +05:30 [DBG] Connection 0HN40LNAQKS8C established using the following protocol: "Tls12"
+2024-05-30 19:23:08.466 +05:30 [DBG] Connection id "0HN40LNAQKS8C" received FIN.
+2024-05-30 19:23:08.467 +05:30 [DBG] Connection id "0HN40LNAQKS8C" is closing.
+2024-05-30 19:23:08.474 +05:30 [DBG] Connection id "0HN40LNAQKS8C" is closed. The last processed stream ID was 0.
+2024-05-30 19:23:08.481 +05:30 [DBG] The connection queue processing loop for 0HN40LNAQKS8C completed.
+2024-05-30 19:23:08.497 +05:30 [DBG] Connection id "0HN40LNAQKS8C" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-30 19:23:08.510 +05:30 [DBG] Connection id "0HN40LNAQKS8C" stopped.

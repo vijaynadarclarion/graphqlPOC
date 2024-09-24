@@ -1,0 +1,235 @@
+"""Represents accident information."""
+type AccidentInfo {
+  """Accident Id."""
+  caseInfoId: Int!
+
+  """Accident case number."""
+  caseNumber: String
+
+  """Accident case registration time."""
+  caseRegisterationTime: DateTime
+  accidentParties: [AccidentParty]
+  caseStatusId: Byte!
+  caseTypeId: Int
+  caseTypeReasonId: Int!
+  caseStageId: Int!
+  callCenterAgentId: Int!
+  commandCenterAgentId: Int
+  dataEntryId: Int
+  caseMoveToCommandQueuTime: DateTime
+  caseAttendedByCommandAgentTime: DateTime
+  caseClosingTime: DateTime
+  surveyorAssigned: Int
+  surveyorAssignedTime: DateTime
+  surveyorArrivalTime: DateTime
+  surveyorClosingTime: DateTime
+  surveyorAcceptJobHandsetTime: DateTime
+  surveyorArrivalHandsetTime: DateTime
+  surveyorClosingHandsetTime: DateTime
+  accidentDesc: String
+  cityId: Int
+  zoneId: Int
+  subZoneId: Int
+  areaId: Int
+  streetId: Int
+  crossStreetId: Int
+  landmarkId: Int
+  latId: String
+  longId: String
+  typePriorityId: Int
+  typePriorityDesc: String
+  outofCoverageId: Int
+  outofCoverageDesc: String
+  locationDesc: String
+  dataEntryCompletedTime: DateTime
+  isQtyFraud: Boolean
+  isQtyImage: Boolean
+  isQtyReports: Boolean
+  photoUploadTime: DateTime
+  mainCaseInfoId: Int
+  policeName: String
+  typeOfAccidentLocationId: Int
+  typeOfAccidentWayId: Int
+  typeOfTrafficSideId: Int
+  caseAssignedToDataEntryTime: DateTime
+  surveyorAcceptJobLat: String
+  surveyorAcceptJobLong: String
+  surveyorArrivalLat: String
+  surveyorArrivalLong: String
+  surveyorClosingLat: String
+  surveyorClosingLong: String
+  caseActivationJobHandsetTime: DateTime
+  surveyorActiveCaseLat: Float
+  surveyorActiveCaseLong: Float
+  surveyorArrivalLocAccuracy: String
+  surveyorClosingLocAccuracy: String
+  splitRegistrationDateTime: DateTime
+  longitude: Float
+  latitude: Float
+  isFemaleInvolved: Byte!
+  caseFraudSourceId: Byte
+  noOfPartiesInvolved: Byte
+  isRemoteSurveying: Boolean
+  isRemoteSurveyingPhotoUpload: Boolean
+  surveyorShiftId: Int
+  isRoadSecurityCase: Boolean
+  drawDamageSceneUserId: Int
+  eventTypeId: Int
+  updatedBy: Int
+  updatedDate: DateTime
+  disabilityTypeIds: String
+  isOfflineCase: Boolean
+}
+
+type AccidentParty {
+  policies: VehicleDetail
+  casepartyId: Int!
+  caseInfoId: Int!
+  partyNo: Int!
+  driverName: String
+  driverId: String
+  plateTypeId: Int
+  driverPhone: String
+  driverAge: Int
+  driverBirthDateHijra: String
+  driverBirthDateGeregorin: DateTime
+  driverLicenseTypeId: Int
+  driverNationalityId: Int
+  driverFeedback: String
+  isInsured: Boolean
+  expiryDate: DateTime
+  vehicleOwnerName: String
+  vehicleMakeId: Int
+  vehicleModelId: Int
+  vehicleManufactureYearId: Int
+  vehicleColorId: Int
+  vehiclePlateNo: String
+  vehiclePlateCountryId: Int
+  vehicleChassisNo: String
+  isVehicleMobile: Byte
+  insCoverageTypeId: Int
+  insuranceTypeId: Int
+  insuranceCompanyId: Int
+  insurancePolicyNo: String
+  insurnacePlateNo: String
+  insurnaceCustomNo: String
+  insurnaceFirstDate: DateTime
+  insuranceFirstDateHijra: String
+  insurnaceEndDate: DateTime
+  insuranceEndDateHijra: String
+  liabilityPercentage: Int
+  partyTypeId: Int
+  soudiPlateType: Int
+  identityTypeId: Int
+  fixedItemTypeId: Int
+  driverLicenseExpiryDate: DateTime
+  driverLicenseExpiryHijraDate: String
+  visaNumber: String
+  vehicleRegistrationTypeId: Int
+  repairFrom: Int
+  partyFiscode: String
+  vehicleSequenceNumber: Decimal
+  customId: Decimal
+  plateChar1: Int
+  plateChar2: Int
+  plateChar3: Int
+  plateNo: String
+  residentStatusId: Int
+  isAgreeOnLiability: Byte
+  insuranceFillingSource: Byte
+  driverFillingSource: Byte
+  vehicleFillingSource: Byte
+  receiptPrintStatus: Byte
+  ownerId: String
+  vehicleId: Decimal
+  sponsorNumber: String
+  licenseNumber: String
+  isRecovery: Boolean
+  policyIssueTime: String
+  plateDigit: Short
+  firstPlateCharacterId: Byte
+  secondPlateCharacterId: Byte
+  thirdPlateCharacterId: Byte
+  ownerFillingSource: Float
+  driverGenderId: Byte!
+  createdDateTime: DateTime
+  isMatchingTaqdeerStandard: Boolean
+  isEda: Boolean
+  isEdaeligible: Boolean
+  createdBy: Int
+  partyCountryId: Int
+  plateCharactersTypeId: Int
+  isSpecialNeeds: Boolean
+  disabilityTypeIds: String
+  noStatementReasonId: Int
+  isCashRepair: Byte
+}
+
+"""
+The `Byte` scalar type represents non-fractional whole numeric values. Byte can represent values between 0 and 255.
+"""
+scalar Byte
+
+"""The `DateTime` scalar represents an ISO-8601 compliant date time type."""
+scalar DateTime
+
+"""The built-in `Decimal` scalar type."""
+scalar Decimal
+
+"""
+The `Long` scalar type represents non-fractional signed whole 64-bit numeric
+values. Long can represent values between -(2^63) and 2^63 - 1.
+"""
+scalar Long
+
+"""Represents any insurance company information."""
+type Query {
+  """Represents the accident information."""
+  accidents(caseNumbers: [String]): [AccidentInfo]
+}
+
+"""
+The `Short` scalar type represents non-fractional signed whole 16-bit numeric
+values. Short can represent values between -(2^15) and 2^15 - 1.
+"""
+scalar Short
+
+type VehicleDetail {
+  vehicle_ID: Int!
+  policy_ID: Int!
+  sub_Policy_Number: String
+  defiend_By: String
+  plat_Number: String
+  first_Plate_Letter: String
+  second_Plate_Letter: String
+  third_Plate_Letter: String
+  custom_ID: String
+  seq_Number: Long!
+  coverage_Type: String
+  plate_Type: String
+  issue_Gre_Date: String
+  effective_Gre_Date: String
+  expire_Gre_Date: String
+  manufacture: String
+  manufacturing_Year: String
+  model: String
+  color: String
+  chassis_Number: String
+  customer_ID: Int
+  personal_Accident_Coverage: String
+  geographic_Coverage_Gcc: String
+  vehicleListDetail: [VehicleListDetail]
+}
+
+type VehicleListDetail {
+  plateNumber: String
+  appliedInNajm: String
+  appliedInElm: String
+  elmRejectionreason: String
+  trans_Type: String
+  sys_Date: String
+  first_Plat_Letter: String
+  second_Plate_Letter: String
+  third_Plate_Letter: String
+}
+

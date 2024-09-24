@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Integrations\Gosi\**" />
+    <Compile Remove="Integrations\Manafeth\**" />
+    <Compile Remove="Integrations\Moh\**" />
+    <Compile Remove="Integrations\NajmNetMedical\**" />
+    <Compile Remove="Integrations\NajmNetMotor\**" />
+    <Compile Remove="Integrations\RulesEngine\**" />
+    <Compile Remove="Types\**" />
+    <EmbeddedResource Remove="Integrations\Gosi\**" />
+    <EmbeddedResource Remove="Integrations\Manafeth\**" />
+    <EmbeddedResource Remove="Integrations\Moh\**" />
+    <EmbeddedResource Remove="Integrations\NajmNetMedical\**" />
+    <EmbeddedResource Remove="Integrations\NajmNetMotor\**" />
+    <EmbeddedResource Remove="Integrations\RulesEngine\**" />
+    <EmbeddedResource Remove="Types\**" />
+    <None Remove="Integrations\Gosi\**" />
+    <None Remove="Integrations\Manafeth\**" />
+    <None Remove="Integrations\Moh\**" />
+    <None Remove="Integrations\NajmNetMedical\**" />
+    <None Remove="Integrations\NajmNetMotor\**" />
+    <None Remove="Integrations\RulesEngine\**" />
+    <None Remove="Types\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Integrations\IntegrationClient.cs" />
+    <Compile Remove="Resolver\AccidentResolver.cs" />
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IdentityModel" Version="7.0.0" />
+    <PackageReference Include="EFCore.BulkExtensions" Version="8.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection.EntityFrameworkCore" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Integrations\Client1\" />
+    <Folder Include="Integrations\Emails\" />
+    <Folder Include="Integrations\ExternalAPIClient\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Najm.GraphQL.ApplicationCore\Najm.GraphQL.ApplicationCore.csproj" />
+  </ItemGroup>
+
+</Project>

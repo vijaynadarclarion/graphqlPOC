@@ -1,0 +1,14 @@
+{
+  "data": {
+    "__type": {
+      "name": "__Directive",
+      "fields": [
+        { "name": "name" },
+        { "name": "description" },
+        { "name": "locations" },
+        { "name": "args" },
+        { "name": "isRepeatable" }
+      ]
+    }
+  }
+}

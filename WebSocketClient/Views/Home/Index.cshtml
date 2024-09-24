@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GraphQL Subscription Client</title>
+</head>
+<body>
+    <h1>GraphQL Subscription Response</h1>
+
+    <!-- Textarea for subscription query -->
+    <textarea id="subscriptionQuery" rows="10" cols="80">
+              subscription {
+  compQuoteRequest(input: {
+    quoteRequestSourceID: 305,
+    groupID: 486,
+    requestReferenceNo: "REQ112233789",
+    policyNumber: "P0724-MTI-CCRO-00108349",
+    coverageTypeID: 1,
+    serviceID: 1,
+    fullName: "test",
+    policyHolderNCDEligibility: 500,
+    policyholderIdentityTypeCode: 1,
+    policyHolderID: "1071377582",
+    vehicleSequenceNumber: 831909610,
+    vehicleUniqueTypeID: 1,
+    policyholderIDExpiry: "2020-03-03",
+    purposeofVehicleUseID: 1,
+    workCityID: 1,
+    isRenewal: true,
+    arabicFirstName: "test ar",
+    arabicMiddleName: "testmiddle",
+    arabicLastName: "testlast",
+    englishFirstName: "end",
+    englishMiddleName: "eng",
+    englishLastName: "eng",
+    dateOfBirthG: "2022-02-02",
+    dateOfBirthH: "1234-09-09",
+    occupation: "computer engineer",
+    education: "Primary",
+    maritalStatus: 1,
+    vehicleCustomID: 0,
+    childrenBelow16: 1,
+    policyholderNationalityID: 1,
+    hasTrailer: true,
+    vehiclePlateTypeID: 1,
+    vehiclePlateNumber: 1234,
+    firstPlateLetterID: 1,
+    secondPlateLetterID: 2,
+    thirdPlateLetterID: 3,
+    vehicleRegistrationExpiryDate: "2030-09-09",
+    najmPolicyHolderNCDEligibility: 1,
+    policyholderGender: 1,
+    trailerSumInsured: 123456,
+    isScheme: false
+  }) {
+    requestReferenceNo,
+    insuranceCompanyCode,
+    errors {
+      message,
+      code
+    },
+    entity {
+      maxLiability,
+      policyTitleID,
+      policyEffectiveDate,
+      policyExpiryDate,
+      vehicleSumInsured,
+      hasTrailer,
+      trailerSumInsure,
+      totalLossPercentage,
+      deductibles {
+        deductibleAmount,
+        policyPremium,
+        premiumBreakdown {
+          breakdownTypeID,
+          breakdownAmount,
+          breakdownPercentage
+        }
+        taxableAmount,
+        discounts {
+          discountTypeID,
+          discountPercentage,
+          discountAmount
+        },
+        dynamicPremiumFeatures {
+          featureID,
+          featureTypeID,
+          featureAmount,
+          featureTaxableAmount
+        }
+      },
+      policyPremiumFeatures {
+        featureID,
+        featureTypeID,
+        featureAmount,
+        featureTaxableAmount
+      },
+      driverDetail {
+        driverID,
+        driverName,
+        vehicleUsagePercentage,
+        driverDateOfBirthG,
+        driverDateOfBirthH,
+        driverGender,
+        driverNCDEligibility
+      },
+      inspectionTypeID,
+      additionalCoverage {
+        addtionalCoverageID,
+        addtionalCoverageAmount
+      },
+      field1,
+      field2,
+      field3,
+      field4,
+      field5,
+      field6,
+      field7,
+      field8,
+      field9,
+      field10,
+      field11,
+      field12,
+      field13,
+      field14,
+      field15
+    }
+  }
+}
+
+
+    </textarea>
+    <br>
+    <br>
+    <input type="text" id="txtToken" width="500" />
+    <br>
+    <br>
+    <button onclick="connectAndSubscribe()">Connect & Subscribe</button>
+    <br />
+    <div id="response"></div>
+    <script>
+
+        function connectAndSubscribe() {
+            const wsUrl = 'ws://localhost:5107/graphql';
+            const ws = new WebSocket(wsUrl, 'graphql-ws'); // Use the correct protocol
+            document.getElementById("response").innerHTML = '';
+            var token = document.getElementById("txtToken").value;
+            //const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMTMiLCJBZ2dyZWdyYXRvcklkIjoiMzA1IiwianRpIjoiYTg4ZDEwNDktNjRmNy00NDI2LTljMzctNzllYzkxZGZkYjdlIiwiZXhwIjoxNzI3MTA0MTc1LCJpc3MiOiJudXBhcHAuY29tIiwiYXVkIjoiTlVQQURNSU5BUEkifQ.jrLgMsbvAMeB1e5To34R-aMUehLV2vQBuH861AM7AVg"
+
+            ws.onopen = function () {
+                console.log('WebSocket connection opened.');
+
+                // Send connection initialization message
+                var initMessage = {
+                    type: 'connection_init',
+                    payload: {
+                        Authorization: 'Bearer ' + token    // Include the token as part of the payload
+                    }
+                };
+                ws.send(JSON.stringify(initMessage));
+
+                // Optionally, send pings to keep connection alive
+                var pingInterval = setInterval(() => {
+                    if (ws.readyState === WebSocket.OPEN) {
+                        ws.send(JSON.stringify({ type: 'ping' }));
+                    }
+                }, 30000); // Ping every 30 seconds
+            };
+
+            ws.onmessage = function (event) {
+                var response = JSON.parse(event.data);
+
+                // Handle server acknowledgment
+                if (response.type === 'connection_ack') {
+                    console.log('Connection acknowledged by server.');
+
+                    // Send the subscription request after acknowledgment
+                    var subscriptionMessage = {
+                        id: '1',
+                        type: 'start',
+                        payload: {
+                            query: document.getElementById("subscriptionQuery").value
+                        }
+                    };
+                    ws.send(JSON.stringify(subscriptionMessage));
+                } 
+
+                else if (response.type === 'connection_error') {
+                    const result = response.payload.message;
+                    let resultHtml = '<br/>';
+
+                    if (result) {
+                        // Append the errors
+                        resultHtml = '<p style="color: red;">Errors:' +  result + "</p>"
+                  
+                    }
+
+                    document.getElementById('response').innerHTML += resultHtml;
+
+                }
+
+                else if (response.type === 'data') {
+                    const result = response.payload.data;
+
+                    // Format JSON string with indentation (2 spaces)
+                    let formattedJson = JSON.stringify(result, null, 2);
+                    let jsonData = '<p>' + formattedJson + '</p>'
+                    document.getElementById('response').innerHTML += jsonData;
+                }
+                else if (response.type === 'error') {
+                    const result = response.payload;
+                    let formattedJson = JSON.stringify(result, null, 2);
+                    let jsonData = '<p>' + formattedJson + '</p>'
+
+                    let resultHtml = '<br/>';
+
+                    if (result) {
+                        // Append the errors
+                        document.getElementById('response').innerHTML += jsonData;
+
+                    }
+
+                    document.getElementById('response').innerHTML += resultHtml;
+                }
+            };
+
+            ws.onerror = function (error) {
+                console.error('WebSocket error:', error);
+            };
+
+            ws.onclose = function () {
+                console.log('WebSocket connection closed.');
+                // Optionally implement reconnection logic
+            };
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+﻿{
+  "schema": "https://nup.sub.test.najm.sa/graphql/",
+  "namespace": "MyGraphQLClient",
+  "outputDirectory": "Generated"
+}
